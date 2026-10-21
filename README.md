@@ -77,6 +77,12 @@ O material de aula propõe a comunicação do estudo em cinco slides, organizado
 
 A discussão considera a coerência ecológica, a justificativa das escolhas e a clareza da comunicação. Métricas elevadas, isoladamente, não demonstram validade ecológica nem capacidade de transferência. No roteiro apresentado, as partições usadas na seleção e no ajuste não constituem automaticamente um teste externo independente.
 
+## Download dos arquivos para as atividades práticas
+
+1. Acesse a [pasta compartilhada no OneDrive](https://1drv.ms/f/c/74559871d74a2001/IgAmmEN_q6H9Rrjbh0edm5OfAdtIXQFh0vaSXA6laG0TJSI?e=qasdnO) e baixe o arquivo **Modelagem.zip**.
+2. Descompacte o arquivo no computador, preservando a estrutura de pastas e os nomes dos arquivos.
+3. O projeto **Modelagem.Rproj** será usado no RStudio durante o curso.
+
 ## Organização das atividades práticas
 
 A estrutura abaixo representa o projeto local utilizado nas atividades; sua inclusão aqui documenta a organização prevista para o trabalho.
@@ -99,7 +105,7 @@ Modelagem/
 └── Zaprionus tuberculatus/
 ```
 
-Esses diretórios e arquivos permanecem locais nesta etapa.
+Os arquivos para as atividades práticas são distribuídos pelo OneDrive, conforme o link acima, e não estão armazenados neste repositório.
 
 ## Estudos de caso
 
@@ -108,7 +114,7 @@ Esses diretórios e arquivos permanecem locais nesta etapa.
 
 ## Materiais e disponibilidade
 
-Este repositório reúne, por enquanto, a apresentação do curso e a descrição de suas práticas. Slides, scripts, dados e resultados serão acrescentados conforme forem liberados para compartilhamento.
+Este repositório reúne a apresentação do curso, a descrição de suas práticas e o link para download de `Modelagem.zip` no OneDrive. Outros materiais serão disponibilizados conforme sua liberação.
 
 O material didático do curso inclui slides, scripts R, exemplos, referências científicas e links para aprofundamento. A descrição desses recursos não implica que já estejam disponíveis para download neste repositório.
 
