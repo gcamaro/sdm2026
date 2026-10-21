@@ -114,4 +114,4 @@ O material didático do curso inclui slides, scripts R, exemplos, referências c
 
 ## Licenças e fontes
 
-A licença declarada pode ser consultada em [LICENSE.md](LICENSE.md). Recursos externos conservam as condições de uso e atribuição de suas fontes. Consulte os metadados e cite a procedência dos dados utilizados. Cada inclusão de conteúdo deverá indicar a licença aplicável.
+A licença declarada pode ser consultada em [LICENSE.md](https://github.com/gcamaro/sdm2026/blob/main/LICENSE.md). Recursos externos conservam as condições de uso e atribuição de suas fontes. Consulte os metadados e cite a procedência dos dados utilizados. Cada inclusão de conteúdo deverá indicar a licença aplicável.
