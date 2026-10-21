@@ -140,6 +140,36 @@ message("Teste espacial concluído.")
 
 Uma instalação que carrega os pacotes e conclui esse teste está preparada para iniciar as atividades. Isso não substitui a execução e a avaliação dos modelos durante o curso.
 
+### Se aparecer o erro Cannot find proj.db
+
+Se o teste espacial apresentar `Error: [rast] empty srs` acompanhado de `Cannot find proj.db`, o PROJ não está encontrando o banco de definições dos sistemas de coordenadas. Esse problema pode ocorrer por uma configuração de caminhos e não é exclusivo do macOS.
+
+**Aplique o ajuste abaixo somente se esse erro ocorrer.** Se o teste espacial já funcionou, prossiga para a próxima etapa.
+
+Execute este bloco no Console do RStudio, antes de repetir o teste espacial:
+
+```r
+# Localiza o banco de definições fornecido com terra
+proj.path <- system.file("proj", package = "terra")
+
+if (!file.exists(file.path(proj.path, "proj.db"))) {
+  stop("proj.db não foi encontrado nessa instalação do terra. Contate a equipe.")
+}
+
+# Configura os caminhos de busca usados pelo PROJ e pelo GDAL
+terra::projPaths(proj.path)
+terra::projPaths(proj.path, with_proj = FALSE)
+
+# Confere se o banco está acessível
+terra::proj_ok()
+```
+
+Se a checagem retornar `TRUE`, execute novamente o bloco **Teste rápido dos dados espaciais**, desde a criação de `r`. A correção estará confirmada quando o teste terminar sem erro e o mapa for apresentado.
+
+Esse ajuste vale para a sessão atual do R. Se reiniciar o R e o mesmo erro reaparecer, execute o bloco novamente antes do teste ou das operações espaciais.
+
+Se aparecer a mensagem de que `proj.db` não foi encontrado, ou se o erro persistir, não substitua o caminho por uma pasta de outro programa ou de uma versão antiga do R. Envie a mensagem completa e a saída de `sessionInfo()` para **george.amaro@embrapa.br**.
+
 ## 5 Baixe e abra o projeto do curso
 
 Consulte o GitHub do curso para acompanhar as informações e os materiais disponíveis. O projeto das atividades é distribuído pelo OneDrive.
@@ -169,7 +199,7 @@ Não execute os scripts completos antes da orientação em aula. Para preparar o
 
 - Falha no GitHub: confira a conexão e tente novamente mais tarde. Se aparecer limite de acesso da API, informe a equipe; não compartilhe senhas nem tokens.
 
-- Falha em sf, terra, units ou compiladores: não altere caminhos de PROJ/GDAL por tentativa. Informe o sistema operacional, a versão do R e a mensagem completa.
+- Falha em sf, terra ou units: se a mensagem mencionar `Cannot find proj.db`, siga a correção específica acima. Para outros erros, informe o sistema operacional, a versão do R e a mensagem completa; não altere caminhos de PROJ/GDAL por tentativa.
 
 - Pacote antigo já instalado: o primeiro bloco instala apenas os ausentes. Se os testes apontarem uma versão incompatível, reinicie o R e solicite orientação para atualizar o pacote indicado.
 
