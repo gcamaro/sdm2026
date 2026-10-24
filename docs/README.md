@@ -34,3 +34,9 @@ Os scripts originais do curso não foram alterados. As cópias fornecidas preser
 
 ## Base metodológica complementar
 Foram lidos no Zotero os suplementos de Kass et al. (2024), “Achieving higher standards in species distribution modeling by leveraging the diversity of available software”. A organização geral do fluxo do curso tem correspondência com os exemplos de espécies raras, invasoras e mudanças climáticas. Detalhes no capítulo de fontes. Os PDFs não foram redistribuídos.
+
+## Leitura dos materiais no navegador
+Todos os links de consulta abrem versões HTML: o roteiro em Markdown é apresentado como texto formatado, os registros CSV como tabelas e os scripts R e inventários JSON como texto com botão de cópia. Os arquivos-fonte são preservados. Essas páginas são regeneradas por `python3 tools/build.py`.
+
+## Autoria, licença e consultas
+George Amaro — george.amaro@embrapa.br. A versão online deste livro será sempre gratuita e distribuída sob a licença CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/. A declaração encontra-se no item 18. O glossário foi organizado em ordem alfabética e o item 19 reúne as referências identificadas nos slides. Os arquivos originais de código são preservados.
