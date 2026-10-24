@@ -1,0 +1,1786 @@
+[
+  {
+    "slide": 1,
+    "text": "Modelagem   Avançada de  Distribuição  de  Espécies   e Nicho  Ecológico   com R George Amaro Pesquisador de Modelagem Agroambiental e Economia george.amaro@embrapa.br @ geamaro @ geamaro Licença:"
+  },
+  {
+    "slide": 2,
+    "text": ""
+  },
+  {
+    "slide": 3,
+    "text": "Apresentações... Fale sobre você..."
+  },
+  {
+    "slide": 4,
+    "text": "Quem somos"
+  },
+  {
+    "slide": 5,
+    "text": "Quem somos"
+  },
+  {
+    "slide": 6,
+    "text": "Quem somos"
+  },
+  {
+    "slide": 7,
+    "text": "Quem somos"
+  },
+  {
+    "slide": 8,
+    "text": "Quem somos"
+  },
+  {
+    "slide": 9,
+    "text": "01 Bases  Teóricas toda  a  teoria   por   trás  das  opções  e para entendimento  dos  resultados , com links  para  papers  e  mais   informações 02 Visão  Geral as  principais   etapas  do  processo  de  modelagem , de forma simples e  direta 03 R e RStudio uma   rápida   introdução   ao   nosso   ambiente  de  análise  de dados e  modelagem 04 Passo-a- passo teoria  e  prática  juntas  em  um tutorial com  resultados  e  análises   em  tempo real 05 Café com Paper experiências ,  conexões  e redes Agenda"
+  },
+  {
+    "slide": 10,
+    "text": "Perguntas são importantes!"
+  },
+  {
+    "slide": 11,
+    "text": ""
+  },
+  {
+    "slide": 12,
+    "text": "Com um grande poder, vem uma grande responsabilidade!"
+  },
+  {
+    "slide": 13,
+    "text": ""
+  },
+  {
+    "slide": 14,
+    "text": "Fontes e recursos do curso 304 links únicos de conteúdo classificados por finalidade Número  de links  únicos"
+  },
+  {
+    "slide": 15,
+    "text": "Distribuição do material do curso 44 6  slides  organizados   por   bloco  de  conteúdo Número  de slides"
+  },
+  {
+    "slide": 16,
+    "text": ""
+  },
+  {
+    "slide": 17,
+    "text": "Como a  ciência   constrói   conhecimento ? Perguntas   sobre  o  mundo   orientam  a coleta de  evidências  e a  construção  de  explicações A  confiança   em   uma   conclusão   depende  de  como   ela   resiste  a testes e  críticas Como  sabemos  o  que   afirmamos ? 13 Essa planta  depende  de ambientes  úmidos ?"
+  },
+  {
+    "slide": 18,
+    "text": "O processo científico Perguntas   podem   surgir  de  observações ,  teorias ,  necessidades   práticas   ou   resultados   inesperados Exploração ,  elaboração  de  hipóteses  e testes se  conectam   por   retornos  e  revisões Não   há   uma   sequência   única  para  toda   investigação 14 Temos   uma   explicação   provisória . Como  outras   pessoas  a  avaliarão ?"
+  },
+  {
+    "slide": 19,
+    "text": "Observação, inferência e hipótese OBSERVAÇÃO Registramos   uma  planta  em  um local e  em   uma  data INFERÊNCIA Estimamos   uma   associação  entre  os   registros  e a  umidade HIPÓTESE Propomos   que  a  disponibilidade  de  água   limita   seu   desempenho Métodos  e  escolhas   definem  o  que   conseguimos   observar 15 Onde  procuramos ? Onde  ainda   não   procuramos ?"
+  },
+  {
+    "slide": 20,
+    "text": "Indução: generalizações a partir dos dados No conjunto  amostrado ,  os   registros  da planta se  concentram   em   locais   úmidos Inferimos   uma   associação   que   pode   orientar   novas   perguntas  e  modelos A  generalização   depende  da  cobertura  e dos  vieses  da  amostragem A  associação   observada   ainda   exige   investigação 16 O  padrão   poderá  se  repetir   em  outros  locais ?"
+  },
+  {
+    "slide": 21,
+    "text": "Dedução: consequências de uma hipótese HIPÓTESE A  baixa   disponibilidade  de  água   limita  o  crescimento  da planta PREDIÇÃO Sob  condições   comparáveis ,  aumentar  a  água   disponível   deverá   aumentar  o  crescimento TESTE Comparar   tratamentos  com  controle  das  demais   condições A  predição   depende  da  hipótese  e dos  pressupostos  do teste 18 Se a  hipótese   estiver   correta , o  que   deveremos   observar ?"
+  },
+  {
+    "slide": 22,
+    "text": "Abdução :  explicações   candidatas Por  que   encontramos   mais   registros   em   locais   úmidos ? A  água   pode   favorecer  o  desempenho  da planta Os   coletores   podem   visitar   mais  esses  locais Outra   condição ,  como  o solo,  pode   acompanhar  a  umidade Explicações   plausíveis   precisam  de testes  que  as  diferenciem 17 Qual  explicação   merece  um teste?  Que   alternativas   existem ?"
+  },
+  {
+    "slide": 23,
+    "text": "Resultados inesperados e revisão Novas  observações   ou  testes  podem   contrariar   nossas   expectativas Investigamos  a  identificação , as  medições , o  desenho  do  estudo  e  seus   pressupostos O conjunto de  evidências   orienta   manter ,  modificar   ou   abandonar   uma   explicação O  resultado   contrário   precisa  ser  examinado  e  comunicado 19 Que   resultado   colocaria   nossa   explicação   em   dificuldade ?"
+  },
+  {
+    "slide": 24,
+    "text": "Objetividade e crítica coletiva Outras   pessoas   podem   identificar   pressupostos ,  falhas  e  explicações   que   não   percebemos Perspectivas   diversas   ampliam  as  perguntas  e  os   pontos   examinados A  crítica   precisa  de  critérios   explícitos ,  acesso  à  discussão  e  respostas   fundamentadas A  participação   amplia  a  crítica , e as  evidências   sustentam   os   argumentos 20 Quem  pode   questionar ? Como  respondemos  à  crítica ?"
+  },
+  {
+    "slide": 25,
+    "text": "Confiança, transparência e correção A  confiança   aumenta   quando   evidências   independentes   convergem  e  os   limites   ficam  claros REPRODUTIBILIDADE Reanalisar   os   mesmos  dados com  os   mesmos   procedimentos REPLICABILIDADE Obter   resultados   consistentes   em   estudos  com  novos  dados Conclusões   podem  mudar  quando  a  evidência   muda 21 Podemos verificar a análise? O que muda com novos dados?"
+  },
+  {
+    "slide": 26,
+    "text": "Perguntas que orientarão a modelagem Para a espécie que será estudada: Qual  pergunta   ecológica   orientará  o  modelo ? Que   hipóteses  e  alternativas   vamos   considerar ? O  que   os   registros   permitem   inferir ? Como  avaliaremos  as  predições  e a  incerteza ? Que   evidência   nos   faria   rever  a  interpretação ? 22 Qual  evidência   sustentará  a  nossa   conclusão ?"
+  },
+  {
+    "slide": 27,
+    "text": "Bases Teóricas apenas o início"
+  },
+  {
+    "slide": 28,
+    "text": "Impactos   econômicos   provocados   por   pragas  e  espécies   invasoras Mais de US$ 423 bilhões em 2019 (custo anual global)(IPBES, 2023) US$ 105  bilhões , 1981-2019,  Brasil ( Adelino et al., 2021)   Estimativas   dependem  da  cobertura  e dos  critérios  de  contabilização  (Soto et al., 2025)"
+  },
+  {
+    "slide": 29,
+    "text": "Necessidade  de  preservação  e  recuperação  de  áreas Brasil :  cerca  de 36,8 mil  espécies  de  angiospermas , das quais  mais  de 19,5 mil  endêmicas  (Gomes-da-Silva et al., 2021) Base  bioeconomia   diversificada  e  sustentável ,  serviços   ecossistêmicos  ( polinização ,  água  e  sequestro  e estoque de  carbono ) e  sistemas  de  produção papéis socioeconômicos locais fundamentais para comunidades tradicionais "
+  },
+  {
+    "slide": 30,
+    "text": "Mudanças   climáticas uma  das  principais   ameaças  à  biodiversidade (IPCC, 2023) impactos   significativos   nos   ecossistemas  e  padrões  macroecológicos de  distribuição  de  espécies (Pearson; Dawson, 2003)  Mudanças  no  uso  da terra"
+  },
+  {
+    "slide": 31,
+    "text": "Modelos  de  distribuição  de  espécies  (SDM/ENM) ajudam  a  compreender   os   padrões   biogeográficos  ( diversidade ,  invasões   biológicas ,  doenças ,  dispersão ) são   úteis  para a  formulação  de  políticas   públicas  ( áreas   protegidas ,  barreiras   sanitárias ,  restauração ) permitem   entender   melhor   os   efeitos  das  mudanças   climáticas"
+  },
+  {
+    "slide": 32,
+    "text": "O \tque é Ecologia? “ o estudo científico das  interações  que determinam a  distribuição  e a  abundância  dos organismos ” Krebs (1972)"
+  },
+  {
+    "slide": 33,
+    "text": "O \tque é Ecologia? “ o estudo científico das  interações  que  determinam  a  distribuição  e a  abundância  dos organismos ” fatores ambientais + interações entre indivíduos e espécies Processos           Padrões limites fisiológicos interações (competição / predação / mutualismo / facilitação) barreiras à dispersão processos estocásticos Krebs (1972)"
+  },
+  {
+    "slide": 34,
+    "text": "O que é um modelo? David  Gandy Gisele Bündchen"
+  },
+  {
+    "slide": 35,
+    "text": "O que é um modelo? simplificação  deliberada  da realidade representação abstrata, conceitual, gráfica ou visual resultado de  escolhas  e  trade- offs “essentially, all models are wrong, but some are  useful ” George E. P. Box (1919-2013) Box & Draper (1987)"
+  },
+  {
+    "slide": 36,
+    "text": "O que é um modelo? Tipos de Análise de Dados"
+  },
+  {
+    "slide": 37,
+    "text": "Processo de Modelagem Guisan et. al (2017) ,  Soley-Guardia et al. (2024)"
+  },
+  {
+    "slide": 38,
+    "text": "Diferentes abordagens e nomes Modelos de Envelopes Climáticos ( Bioclimatic  Envelope Models ) Estimar um espaço multivariado de variáveis climáticas (envelope) Modelos de Nicho Ecológico ( Ecological   Niche  Models ) Identificar o ambiente de ocorrência de uma espécie( Grinnell  e Hutchinson) Modelos de Adequabilidade de Habitat ( Habitat  Suitability  Models ) Envelope relacionado ao habitat, como espaço físico e recursos Modelos de Distribuição de Espécies ( Species   Distribution  Models ) Modelar a distribuição das espécies no espaço geográfico Peterson & Soberón (2012) ,  McInerny & Etienne (2012) ,  Thuiller (2024) ,  Qiao & Escobar (2025)"
+  },
+  {
+    "slide": 39,
+    "text": "Diferentes abordagens e nomes Modelos de Envelopes Climáticos ( Bioclimatic  Envelope Models ) Estimar um espaço multivariado de variáveis climáticas (envelope) Modelos de Nicho Ecológico ( Ecological   Niche  Models ) Identificar o ambiente de ocorrência de uma espécie ( Grinnell  e Hutchinson) Modelos de Adequabilidade de Habitat ( Habitat  Suitability  Models ) Envelope relacionado ao habitat, como espaço físico e recursos Modelos de Distribuição de Espécies ( Species   Distribution  Models ) Modelar a distribuição das espécies no espaço geográfico Peterson & Soberón (2012) ,  McInerny & Etienne (2012) ,  Thuiller (2024) ,  Qiao & Escobar (2025)"
+  },
+  {
+    "slide": 40,
+    "text": "Diferentes abordagens e nomes Modelos de Envelopes Climáticos ( Bioclimatic  Envelope Models ) Estimar um espaço multivariado de variáveis climáticas (envelope) Modelos de Nicho Ecológico ( Ecological   Niche  Models ) Identificar o ambiente de ocorrência de uma espécie ( Grinnell  e Hutchinson) Modelos de Adequabilidade de Habitat ( Habitat  Suitability  Models ) Envelope relacionado ao habitat, como espaço físico e recursos Modelos de Distribuição de Espécies ( Species   Distribution  Models ) Modelar a distribuição das espécies no espaço geográfico indica locais onde uma espécie poderia prosperar Peterson & Soberón (2012) ,  McInerny & Etienne (2012) ,  Thuiller (2024) ,  Qiao & Escobar (2025)"
+  },
+  {
+    "slide": 41,
+    "text": "Diferentes abordagens e nomes Modelos de Envelopes Climáticos ( Bioclimatic  Envelope Models ) Estimar um espaço multivariado de variáveis climáticas (envelope) Modelos de Nicho Ecológico (Ecological Niche Models): caracterizar condições ambientais associadas à espécie Modelos de Adequabilidade de Habitat ( Habitat  Suitability  Models ) Envelope relacionado ao habitat, como espaço físico e recursos Modelos de Distribuição de Espécies ( Species   Distribution  Models ) Modelar a distribuição das espécies no espaço geográfico indica locais  com adequabilidade ambiental  para a espécie Peterson & Soberón (2012) ,  McInerny & Etienne (2012) ,  Thuiller (2024) ,  Qiao & Escobar (2025)"
+  },
+  {
+    "slide": 42,
+    "text": "Mas, modelos são... modelos Silva & Catelli (2019) ,  Vancine  (2022) ERROS COMPLEXIDADE REALIDADE MODELOS REALIDADE MODELOS"
+  },
+  {
+    "slide": 43,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 44,
+    "text": "Intervalo para Almoço"
+  },
+  {
+    "slide": 45,
+    "text": "Boa tarde!"
+  },
+  {
+    "slide": 46,
+    "text": "O que se quer dizer por “nicho”? McInerny & Etienne (2012) ,  Sales et al. (2021)"
+  },
+  {
+    "slide": 47,
+    "text": "O que se quer dizer por “nicho”? McInerny & Etienne (2012) ,  Sales et al. (2021)"
+  },
+  {
+    "slide": 48,
+    "text": "Quais  fatores   determinam  a distribuição  de  uma   espécie ?"
+  },
+  {
+    "slide": 49,
+    "text": "Espaço Geográfico ( G ) Soberón & Peterson (2005) ,  Peterson et al. (2011) G"
+  },
+  {
+    "slide": 50,
+    "text": "Distribuição de Espécies Soberón & Peterson (2005) ,  Peterson et al. (2011) G"
+  },
+  {
+    "slide": 51,
+    "text": "Condições Abióticas (A) Grinnell (1917) ,  Soberón & Peterson (2005) ,  Soberón (2007) ,  Peterson et al. (2011) A G Joseph  Grinnel  (1917) requisitos ambientais condições do ambiente   - propriedades que podem ser       alteradas mas não esgotadas nicho pode ser descrito   através de fatores    ambientais existem  nichos vacantes?"
+  },
+  {
+    "slide": 52,
+    "text": "Condições Bióticas ( B ) Elton(1927) ,  Macarthur & Levins (1967) ,  Soberón & Peterson (2005) ,  Peterson et al. (2011) B G Charles Elton (1927) função dos organismos impacto  no ambiente propriedade da espécie interações   - efeito de uma espécie   sobre a outra  (nicho trófico) recursos X interações qual diferença entre recurso e condição?"
+  },
+  {
+    "slide": 53,
+    "text": "Condições Abióticas (A) e Bióticas ( B ) Hutchinson (1957) ,  Soberón & Peterson (2005) ,  Soberón(2007) ,  Peterson et al. (2011) B A G George Hutchinson (1957) requisitos  ambientais  + requisitos  biológicos ambientes afetam interações interações afetam ambientes requerimentos X impactos"
+  },
+  {
+    "slide": 54,
+    "text": "Condições Abióticas (A) e Bióticas ( B ) Hutchinson (1957) ,  Soberón & Peterson (2005) ,  Soberón(2007) ,  Peterson et al. (2011) B A G George Hutchinson (1957) requisitos ambientais + requisitos biológicos nicho fundamental - ambiente favorável - referência biótica definida"
+  },
+  {
+    "slide": 55,
+    "text": "Condições Abióticas (A) e Bióticas ( B ) Hutchinson (1957) ,  Soberón & Peterson (2005) ,  Soberón(2007) ,  Peterson et al. (2011) B A G George Hutchinson (1957) requisitos ambientais + requisitos biológicos nicho fundamental - ambiente favorável - referência biótica definida nicho realizado modificado pelas interações      - competição      - predação      - recrutamento deficiente      - doenças / parasitismo"
+  },
+  {
+    "slide": 56,
+    "text": "Limitações pela área acessível (M) Hutchinson (1957) ,  Soberón & Peterson (2005) ,  Peterson et al. (2011) ,  Barve  et al. (2011) B A M G Jorge Soberón &  Townsend Peterson  (2005) regiões acessíveis  dispersão ou colonização em um determinado intervalo de tempo"
+  },
+  {
+    "slide": 57,
+    "text": "Peterson et al. (2011) ,  Holt (2009) ;  Pang et al. (2026) B A M G   Nicho de estabelecimento:  condições em que uma população consegue crescer quando é muito rara e, assim, iniciar uma população local Nicho de persistência:  condições em que uma população  já estabelecida  consegue se manter ao longo do tempo"
+  },
+  {
+    "slide": 58,
+    "text": "O que modelamos de fato Soberón & Peterson (2005) ,  Soberón(2007) ,  Peterson et al. (2011) ESTIMATIVAS requisitos fisiológicos (modelos mecanísticos) associações ambientais (modelos correlativos) B A M G nicho Grinnelliano ruído Eltoniano área de calibração background peseudoausências variáveis preditoras ocorrências"
+  },
+  {
+    "slide": 59,
+    "text": "A  resposta   é  a  mesma   em   escalas   diferentes ?"
+  },
+  {
+    "slide": 60,
+    "text": "O que modelamos de fato?"
+  },
+  {
+    "slide": 61,
+    "text": ""
+  },
+  {
+    "slide": 62,
+    "text": "FORMAÇÃO  DE  COMUNIDADES p ool global de  espécies p ool regional de  espécies p ool local de  espécies c omunidade   observada p rocessos   neutros b arreiras   a mbientais f atores   abióticos e speciação  e  adaptação Traços  das  espécies barreiras   biótic a s i nterações   ecológicas Como as comunidades  funcionam ?"
+  },
+  {
+    "slide": 63,
+    "text": "Diferentes abordagens e nomes Grinnell  (1917) associou a ocorrência de uma espécie às características do habitat e adaptações comportamentais variáveis (abióticas/cenopoéticas): fatores ambientais em escalas espaciais amplas nicho como atributo do espaço (requisitos da espécie) Elton (1927) nicho como papel funcional na cadeia alimentar ênfase no impacto (ambiente X espécies / espécies X ambiente) variáveis (bióticas/bionômicas) em escalas espaciais pequenas Grinnell (1917) ,  Elton (1927) ,  Soberón & Peterson (2005) ,  Peterson et al. (2011)"
+  },
+  {
+    "slide": 64,
+    "text": "Diferentes abordagens e nomes Hutchinson (1957) nicho ecológico como hipervolume  n -dimensional as dimensões representam condições ambientais e recursos necessários para uma população persistir Distinguir nicho fundamental, sua parcela existente e o nicho realizado, explicitando a definição adotada Nicho realizado e ocupação dependem das interações e do contexto. Facilitação também pode modificar os limites observados biótopos  – relação entre nicho e distribuição (localidades) Variáveis separadas Interativas (bionômicas) Não-interativas ( cenopoéticas ) –  grande insight!!! Hutchinson (1957) ,  Soberón & Peterson (2005) ,  Soberon (2007) ,  Peterson et al. (2011)"
+  },
+  {
+    "slide": 65,
+    "text": "AMBIENTE ABIÓTICO AMBIENTE BIÓTICO ESPÉCIE a.i )    efeitos  e  requisitos   abióticos a.ii )    efeitos  e  requisitos   bióticos b.i )    m odifica  o ambiente   físico b.ii )    efeitos   interespecíficos b.iii )    efeitos intraespecíficos McInerny  & Etienne (2012)"
+  },
+  {
+    "slide": 66,
+    "text": "Condições Abióticas (A) e Bióticas ( B ) McInerny  & Etienne (2012) Grinnell 1917 Onde a  espécie   encontra   condições  para  viver ? Elton 1927 Qual é seu papel e com quem interage? Hutchinson 1957 Em quais combinações ambientais ela persiste? As  três   tradições   enfatizam   aspectos   distintos  (e  complementares )  do  mesmo   problema"
+  },
+  {
+    "slide": 67,
+    "text": "Diferentes abordagens e nomes Soberón  & Peterson (2005) –  Diagrama  BAM regiões   acessíveis  à  espécie   por   dispersão / colonização   em  um  intervalo  de tempo ( barreiras   históricas  e  geográficas   definem  M) Distribuição   potencial :   ( onde   condições   abióticas  e  bióticas   são   favoráveis ) Distribuição   geográfica   realizada :   —  somente  a  parte   potencial   dentro  de M   pode  ser  ocupada Integração   E-space X G-space : o  nicho  ( em  E)  projeta -se  em  G, mas a  ocupação  real  depende  de  acessibilidade (M) e  dinâmica  de  colonização / extinção Tempo e  desequilíbrio :  invasões ,  mudanças   climáticas  e  perturbações   podem   deslocar   ,   e  os   limites  de  ,  gerando   não-equilíbrio  entre  nicho  e  distribuição Implicações  para SDM/ENM : definir  M  como   área  de  calibração /background  ajuda  a  contextualizar   inferências ;  não   elimina  a  extrapolação amostragem  e  viés   devem   respeitar   M ( métricas  e  validação   também ) cenários   futuros   exigem   explicitar   suposições   sobre   mudanças   em  A, B e M   Hutchinson (1957) ,  Soberón & Peterson (2005) ,  Soberon (2007) ,  Peterson et al. (2011)"
+  },
+  {
+    "slide": 68,
+    "text": "Definição Formal     O nicho fundamental,  N F , é representado pela elipse em vermelho. O nicho existente,  N*( t ;  G ) , é o conjunto de pontos vermelhos dentro da elipse. O nicho realizado,  N R ( t ;  G ) , é o subconjunto em azul. A nuvem formada por todos os pontos pretos constitui o ambiente  E( t ;  G )  disponível no tempo  t  e na região G. * k é um limiar necessário para a persistência da população. Jiménez et al. (2019) ,  Soberón & Arroyo-Peña (2017) ,  Jackson &  Overpeck  (2019) Nem  todos   os  ambientes  possíveis   teoricamente  ( em   ) estão  presentes  no  mundo  real; o  mundo  “ oferece ”  apenas   uma   parte ,  em  um  determinado   momento  "
+  },
+  {
+    "slide": 69,
+    "text": "Nicho:  hipervolume   n -dimensional Hutchinson (1957) ,  Soberón & Peterson (2005) ,  Peterson et al. (2011) ,  Guisan et al. (2017) mecanísticos correlativos distribuição atual pode ser um indicador parcial dos requisitos ecológicos não dependem de dados de ocorrência mas precisam de dados fisiológicos detalhados mecanísticos correlativos"
+  },
+  {
+    "slide": 70,
+    "text": "Dualidade de  Hutchinson Relação entre espaço geográfico e espaço ambiental (nicho) Cada ponto do espaço geográfico corresponde a um único ponto do espaço ambiental Um único ponto no espaço ambiental pode corresponder a um ou mais pontos no espaço geográfico propriedade quer permite projetar os modelos Áreas de distribuição são subconjuntos de  G  e nichos ( Grinnelianos ) são subconjuntos de E Colwell  & Rangel (2009) ,  Soberón  & Nakamura (2009) ,  Soberón  et al. (2017)"
+  },
+  {
+    "slide": 71,
+    "text": "Modelagem de Nicho/Distribuição A existência de uma população pode ser associada às condições ambientais Condições favoráveis no espaço ambiental (E) podem possuir diferentes localizações no espaço geográfico ( G ) Nossos modelos estimam o nicho ecológico no espaço ambiental (E) e projetam a distribuição no espaço geográfico ( G ) Colwell  & Rangel (2009) ,  Soberón  & Nakamura (2009) ,  Soberón  et al. (2017)"
+  },
+  {
+    "slide": 72,
+    "text": "Nicho Ecológico e Distribuição de Espécies Ocorrências no espaço geográfico Soberón & Nakamura (2009)"
+  },
+  {
+    "slide": 73,
+    "text": "Nicho Ecológico e Distribuição de Espécies Condições ambientais para ocorrências e área de estudo Soberón & Nakamura (2009)"
+  },
+  {
+    "slide": 74,
+    "text": "Nicho Ecológico e Distribuição de Espécies Estimativa das associações ambientais Soberón & Nakamura (2009)"
+  },
+  {
+    "slide": 75,
+    "text": "Nicho Ecológico e Distribuição de Espécies Projeção geográfica das associações ambientais estimadas Soberón & Nakamura (2009)"
+  },
+  {
+    "slide": 76,
+    "text": "BAM  x  adequabilidade no espaço geográfico Soberón & Peterson (2005) ,  Sanín  & Anderson (2018)"
+  },
+  {
+    "slide": 77,
+    "text": "Uma definição...  Nicho Ecológico Chase &  Leibold  (2003) \"A  descrição   conjunta  das  condições   ambientais   que   permitem  a  uma   espécie   satisfazer   os   seus   requisitos   mínimos  de modo a  que  a taxa de  natalidade  de  uma   população  local  seja   igual   ou  superior à  sua  taxa de  mortalidade ,  juntamente  com o conjunto de  efeitos  per capita dessa  espécie   sobre   essas   condições   ambientais .\""
+  },
+  {
+    "slide": 78,
+    "text": "Uma definição...  Modelagem de Distribuição de Espécies A modelagem correlativa da distribuição de espécies utiliza algoritmos para  relacionar registros de ocorrência às condições ambientais e projetar essa relação no espaço geográfico , identificando áreas potencialmente adequadas à espécie"
+  },
+  {
+    "slide": 79,
+    "text": "ENM, SDM e Distribuição Potencial O nicho ecológico descreve requisitos e condições no espaço ambiental (E) Sua projeção no espaço geográfico ( G ) fundamenta a identificação de áreas potencialmente adequadas A ocupação efetiva depende também de acessibilidade, interações, história e dinâmica populacional Soberón & Nakamura (2009)"
+  },
+  {
+    "slide": 80,
+    "text": "Um “primeiro modelo”? Introdução de uma espécie para aumentar a biodiversidade, considerando características climáticas semelhantes (com sul da Ásia). Bump  &  Bohl  (1961) "
+  },
+  {
+    "slide": 81,
+    "text": "O que mudou?"
+  },
+  {
+    "slide": 82,
+    "text": "Modelagem “Moderna” Estudos pioneiros datam de 1924 BIOCLIM (Austrália, 1984) bases para as variáveis climáticas Worldclim  (e outras)  derivam do BIOCLIM Climex  (Austrália, 1985) - baseado em crescimento e estresses climáticos DOMAIN e GARP Diversos algoritmos para modelagem, a maioria  open  source   e de distribuição livre, sendo Maxent amplamente utilizado Aplicações em diversas áreas Thuiller & Zimmermann (2017) ,  Booth  (2025)"
+  },
+  {
+    "slide": 83,
+    "text": "Modelagem “Moderna” Map created using BIOCLIM data for De Vis’ banded snake ( Denisonia devisi ). Red stars indicate 124 observed occurrence locations. The ‘+’ symbols indicate core locations and ‘.‘ symbols indicate marginal locations according to the BIOCLIM analysis (from Nix (1986) in Longmore (1986)). Current distribution of De Vis’ banded snake ( Denisonia  devisi ), according to GBIF data. Booth , 2018"
+  },
+  {
+    "slide": 84,
+    "text": "Ainda assim... “ Geographic   distributional   areas   are  the   shadows   produced   by  taxa  on   the   geographical   screen .  To   study   them   one   needs   measure   ghosts .”  - A.  Rapoport .  Areography :  Grographical   Strategies  os  Species , 1982. “Most  ecologists  must  agree   that   niche   is  a central  concept   of   ecology ,  even   though   we  do  not   know   what  it  means .” - L. Real & S. Levin.  Theorethical   Advances :  the  role  of   theory  in  the   rise   of   modern   ecology , 1991. Rapoport (1982) ,  Real & Levin (1991)  "
+  },
+  {
+    "slide": 85,
+    "text": "Em  outras   palavras ... Nós   modelamos   fantasmas  ( nicho   ecológico ) e  projetamos   sombras  ( distribuição   geográfica   potencial ) Nossos   modelos   são  “ sombras de  fantasmas ”"
+  },
+  {
+    "slide": 86,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 87,
+    "text": "Visão Geral um pouco de tudo... e mais um pouco! Visão Geral um pouco de tudo... e mais um pouco!"
+  },
+  {
+    "slide": 88,
+    "text": "Passos para Modelagem Zurell et. al (2020)"
+  },
+  {
+    "slide": 89,
+    "text": "locais períodos"
+  },
+  {
+    "slide": 90,
+    "text": "1. Definição do Problema  Diversas aplicações e áreas Deve ficar claro o  objetivo da modelagem Qual a pergunta da pesquisa? Como isso pode ser testado? Urbina-Cardona et al. (2019)"
+  },
+  {
+    "slide": 91,
+    "text": "Diferentes Aplicações identificar novas populações de espécies conhecidas  detectar áreas em risco para espécies invasoras habitats alvo para translocação de espécies ou dispersão assistida avaliar o efeito das mudanças climáticas na distribuição de espécies explorar a distribuição de espécies em períodos passados e futuros ​​ avaliar áreas prioritárias para conservação avaliar biodiversidade Velasco et al. (2020)"
+  },
+  {
+    "slide": 92,
+    "text": "efeito de mudanças climáticas sobre espécies de interesse efeitos de antropização ou exploração econômica de recursos naturais sobre a distribuição de espécies avaliar a eficiência de áreas protegidas identificar a resposta de espécies à modificação da paisagem identificar áreas de risco de exposição a vetores de doenças saúde pública e saúde única Ferro e Silva et al. (2018) Diferentes Aplicações"
+  },
+  {
+    "slide": 93,
+    "text": "Vasconcelos et al. (2024) 85% Maxent colaboração entre China, Reino Unido e Brasil crescimento anual de 12% urgência em avaliar perda de diversidade integração de IA no processo de modelagem"
+  },
+  {
+    "slide": 94,
+    "text": "Vasconcelos et al. (2024)"
+  },
+  {
+    "slide": 95,
+    "text": "2. Preparação dos Dados  Brown & Yoder (2015)"
+  },
+  {
+    "slide": 96,
+    "text": "3. Ajuste dos Modelos Brown &  Yoder  (2015)"
+  },
+  {
+    "slide": 97,
+    "text": "4. Avaliação do Ajuste dos Modelos Brown &  Yoder  (2015)"
+  },
+  {
+    "slide": 98,
+    "text": "5. Predições no Espaço e no Tempo Brown &  Yoder  (2015)"
+  },
+  {
+    "slide": 99,
+    "text": "O que esperar das projeções Reconhecer condições ambientais associadas às ocorrências e projetar a adequabilidade para a área de interesse Omissão: uma ocorrência de avaliação recebe valor inferior ao limiar escolhido Uma grande área adequada não demonstra, por si só, erro de comissão: parte dela pode estar desocupada ou pouco amostrada Background  descreve condições disponíveis. Seus pontos podem incluir locais ocupados Avaliar o mapa exige considerar o objetivo, a área de calibração, os dados de avaliação e os custos dos erros"
+  },
+  {
+    "slide": 100,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 101,
+    "text": ""
+  },
+  {
+    "slide": 102,
+    "text": "Visão Geral um pouco de tudo... e mais um pouco! Bom dia!"
+  },
+  {
+    "slide": 103,
+    "text": ""
+  },
+  {
+    "slide": 104,
+    "text": ""
+  },
+  {
+    "slide": 105,
+    "text": "Por que usar o  R ?"
+  },
+  {
+    "slide": 106,
+    "text": "A Linguagem"
+  },
+  {
+    "slide": 107,
+    "text": "O Software R  é uma  linguagem de programação e um ambiente  para manipulação, visualização e  análise  de dados Fornece   uma   imensa   variedade  de  técnicas   estatísticas  e  matemáticas e  é   altamente   extensível Software Livre (Windows, macOS, Linux…) Ecossistema  ( vários   pacotes   específicos )  que   incentiva  a  reprodutibilidade Documentação   extensa https://www.r-project.org"
+  },
+  {
+    "slide": 108,
+    "text": "O  Ambiente de Desenvolvimento Integrado (IDE) para o  R Interface mais  amigável Facilita a documentação de scripts HELP integrado Apoio à identificação de erros de sintaxe Execução de comandos diretamente do editor https://rstudio.com/products/rstudio/  "
+  },
+  {
+    "slide": 109,
+    "text": ""
+  },
+  {
+    "slide": 110,
+    "text": "O  Ismay  & Kim (2022)"
+  },
+  {
+    "slide": 111,
+    "text": "Pacotes para o R  Must  Have   Packages"
+  },
+  {
+    "slide": 112,
+    "text": ""
+  },
+  {
+    "slide": 113,
+    "text": ""
+  },
+  {
+    "slide": 114,
+    "text": "R  e  RStudio Big Book of R ,  Análises Ecológicas no R 400   free , open-sourced books fundamentos  de  manipulação  e  análises  de dados"
+  },
+  {
+    "slide": 115,
+    "text": "R  e  RStudio R for the Rest of Us ,  R  for  Everyone statistical  methods and tools for  everyday R  less scary  and  more fun"
+  },
+  {
+    "slide": 116,
+    "text": "R  e  RStudio Spatial Data Analysis and Statistics with R ,  Análisis  espacial com  R aplicaciones  y  casos  de  estudio topics in  applied  spatial statistics"
+  },
+  {
+    "slide": 117,
+    "text": "R  e  RStudio Modern Data Visualization ,  Data Manipulation ,  Spatial  Data  Visualization   with   tmap data  manipulation  with  dplyr suggestions for  best practices dtatavis  with  tmap"
+  },
+  {
+    "slide": 118,
+    "text": "Em caso de dúvida..."
+  },
+  {
+    "slide": 119,
+    "text": ""
+  },
+  {
+    "slide": 120,
+    "text": "O que vamos construir neste curso? Vamos trabalhar em  grupos Cada grupo escolherá uma espécie e formulará sua  pergunta de pesquisa O  grupo   preparará   os  dados,  ajustará   modelos  e  interpretará   os   próprios   resultados O  roteiro   considera   oito   algoritmos  e  combina   os   modelos   selecionados   em  um  ensemble Ao final,  cada   grupo   deverá   justificar   suas   escolhas ,  comunicar  a  adequabilidade   ambiental ,  reconhecer   os   limites  da  projeção  e  identificar   pontos  de  melhoria   na   metodologia Cada  grupo   deverá   preparar  um  texto   curto  ( Nota Técnica )  considerando  a  estrutura   IMReD  e  fazer   uma   apresentação  ( cinco  slides / 10  minutos ) CRediT   deve  ser  usado  para  taxonomia  de  papéis   na   autoria  do  trabalho"
+  },
+  {
+    "slide": 121,
+    "text": ""
+  },
+  {
+    "slide": 122,
+    "text": ""
+  },
+  {
+    "slide": 123,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 124,
+    "text": "Intervalo para Almoço"
+  },
+  {
+    "slide": 125,
+    "text": ""
+  },
+  {
+    "slide": 126,
+    "text": "Capítulo 1 Definição do Problema"
+  },
+  {
+    "slide": 127,
+    "text": "Zurell et. al (2020) ,  ODMAP 1. Definição do Problema"
+  },
+  {
+    "slide": 128,
+    "text": "O que queremos entender? mudanças climáticas (passado e futuro) espécies invasoras transmissão de doenças interações entre espécies processos de diversificação ou extinção dispersão de espécies conservação/evolução do nicho estabelecer e avaliar áreas protegidas padrões de diversidade"
+  },
+  {
+    "slide": 129,
+    "text": "1. Definição do Problema Escolhas X  Trade- offs Objetivo do modelo Espécie de interesse Área de estudo Escala da análise Dados de ocorrência Variáveis preditoras  Algoritmos e premissas Software e codificação Autoria e divisão do trabalho"
+  },
+  {
+    "slide": 130,
+    "text": "1. Definição do Problema Conservação Pena et al. (2017)"
+  },
+  {
+    "slide": 131,
+    "text": "1. Definição do Problema Conservação Pena et al. (2017)"
+  },
+  {
+    "slide": 132,
+    "text": "1. Definição do Problema Mudanças Climáticas e Governança Nascimento et al. (2025)"
+  },
+  {
+    "slide": 133,
+    "text": "1. Definição do Problema Ecologia de Paisagem Santos et al. (2020)"
+  },
+  {
+    "slide": 134,
+    "text": "1. Definição do Problema Ocorrência de Doenças Ferro e Silva et al. (2018)"
+  },
+  {
+    "slide": 135,
+    "text": "1. Definição do Problema Invasão Biológica Bello  et al. (2021)"
+  },
+  {
+    "slide": 136,
+    "text": "1. Definição do Problema Mudanças Climáticas Alves-Ferreira et al. (2025)"
+  },
+  {
+    "slide": 137,
+    "text": "1. Definição do Problema Mudanças Climáticas Nunes Soares et al. (2026)"
+  },
+  {
+    "slide": 138,
+    "text": "1. Definição do Problema Mudanças Climáticas Amaro et al. (2026)"
+  },
+  {
+    "slide": 139,
+    "text": "1. Definição do Problema Espécie:  Zaprionus   tuberculatus   Malloch , 1932  ( Diptera :  Drosophilidae ) mosca-do-vinagre ou mosca-do-bagaço ( vinegar  ou  pomace   fly ) polífaga, nativa da África, não é praga  quarentária Hospedeiros: 49 espécies de 11 famílias (frutos maduros ou em decomposição) goiaba ( Psidium guajava ) Em quais países é nativa? native.range  <-  c (“nomes dos países em inglês, separados por vírgula”) Objetivo: Distribuição atual e potencial Global Brasil Projeção para climas futuros Já possui modelos anteriores (CLIMEX, GARP e Maxent)? Dados de Ocorrência: bibliografia e GBIF Foto:  Eleftherios Katsillis (GBIF)"
+  },
+  {
+    "slide": 140,
+    "text": "1. Definição do Problema ChatGPT Escreva ,  em   linguagem   científica  editorial para  publicação   em   artigo   científico , um  resumo   sobre  a  espécie   Zaprionus   tuberculatus :  área   nativa ,  área   invadida ,  reprodução ,  características   ambientais   favoráveis ,  ciclo  de  vida ,  quantidade  de  hospedeiros ,  hospedeiros   preferenciais  e  danos   econômicos   estimados  à  produção  dos  hospedeiros .  Identifique  se  já   foram   publicados   trabalhos  com  modelos  de  distribuição  e  nicho   ecológico  (SDM/ENM) dessa  espécie ,  fornecendo  links para as  publicações . Use  apenas   informações  de  artigos   científicos  reais Faça uma lista, formato R, apenas uma linha, chamada  native.range , com os nomes dos países em inglês, onde  Zaprionus   tuberculatus   é considerada nativa, para SDM SciSpace Search for research papers on the potential distribution of  Zaprionus   tuberculatus , utilizing species distribution and ecological niche models Semantic Scholar Zaprionus   tuberculatus   species distribution model Elicit Zaprionus   tuberculatus   species distribution model Connected Papers Zaprionus   tuberculatus   species distribution model Foto:  Jean Martins  (GBIF)"
+  },
+  {
+    "slide": 141,
+    "text": ""
+  },
+  {
+    "slide": 142,
+    "text": ""
+  },
+  {
+    "slide": 143,
+    "text": "Definição do Problema"
+  },
+  {
+    "slide": 144,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 145,
+    "text": "Capítulo 2 Preparação dos Dados"
+  },
+  {
+    "slide": 146,
+    "text": "Passos para Modelagem Zurell et. al (2020)"
+  },
+  {
+    "slide": 147,
+    "text": ""
+  },
+  {
+    "slide": 148,
+    "text": "Harmonia  axyridis   Ocorrencia  2026-09-30.xlsx"
+  },
+  {
+    "slide": 149,
+    "text": "2. Preparação dos Dados Dados de Ocorrência"
+  },
+  {
+    "slide": 150,
+    "text": "Fontes primárias e secundárias"
+  },
+  {
+    "slide": 151,
+    "text": "Dados qualitativos e quantitativos"
+  },
+  {
+    "slide": 152,
+    "text": "Escalas de mensuração"
+  },
+  {
+    "slide": 153,
+    "text": "Registros de ocorrência: qualidade e escala Fontes: campo, coleções, literatura, repositórios e  ciência cidadã Conferir  identificação taxonômica ,  coordenadas , data,  origem  e condição do registro A  incerteza posicional  deve ser compatível com a resolução dos preditores e o objetivo Casas decimais representam detalhe numérico; não comprovam acurácia da localização Conferir também a  compatibilidade temporal . A não detecção e a falta de ocupação de habitat adequado exigem atenção Moudrý et al. (2024)"
+  },
+  {
+    "slide": 154,
+    "text": ""
+  },
+  {
+    "slide": 155,
+    "text": ""
+  },
+  {
+    "slide": 156,
+    "text": "2. Preparação dos Dados Dados de Ocorrência Modelos são tão bons quanto os dados utilizados para sua calibragem Área nativa X Área invadida Limites à obtenção de dados custo, idioma, barreiras físicas, fronteiras, acessibilidade Desconsidera o princípio da casualização o conjunto de dados não representa uma amostra aleatória da distribuição Dados de bases de dados on-line diferentes fontes e métodos erros diversos (inclusive taxonômicos – espécies crípticas) Fielding & Bell (1997) ,  Hirzel et al. (2002) ,  Wolmarans et al. (2010) ,  Holle et al. (2025) , Beaumont et al. (2009) ,  Broennimann and Guisan (2008) ,  Zhang et al. (2020)  "
+  },
+  {
+    "slide": 157,
+    "text": "Qualidade dos dados e resultados"
+  },
+  {
+    "slide": 158,
+    "text": "Peterson et al. (2018) 2. Preparação dos Dados Dados de Ocorrência"
+  },
+  {
+    "slide": 159,
+    "text": "Peterson et al. (2018) 2. Preparação dos Dados Dados de Ocorrência usamos dados com: - origem desconhecida - precisão desconhecida - acurácia desconhecida"
+  },
+  {
+    "slide": 160,
+    "text": "2. Preparação dos Dados Dados de Ocorrência Lozier  et al. (2009)"
+  },
+  {
+    "slide": 161,
+    "text": "B A M G 2. Preparação dos Dados"
+  },
+  {
+    "slide": 162,
+    "text": "B A M G 2. Preparação dos Dados"
+  },
+  {
+    "slide": 163,
+    "text": "B A M G 2. Preparação dos Dados"
+  },
+  {
+    "slide": 164,
+    "text": "B A M G 0 G G i Projeção de NF em G: A  G 0  = A∩B∩M G i ​ = (A∩B)∖M –  inacessível ? 2. Preparação dos Dados"
+  },
+  {
+    "slide": 165,
+    "text": "B A M G G i G 0 G Ei G Bi M i B i A: expressão geográfica dos requisitos abióticos G 0  = A∩B∩M – área ocupada G i ​ = (A∩B)∖M –  inacessível ? G​ Ei  = A∖(B∪M) –  ambiente   adequado G Bi ​  = (A∩M)∖ B  – biótica desfavorável M i​  = M∖(A∪B) – apenas acessível B i  =  B ∖(A∪M) – apenas biótica 2. Preparação dos Dados"
+  },
+  {
+    "slide": 166,
+    "text": "2. Preparação dos Dados B A M G G i G 0 A: expressão geográfica dos requisitos abióticos G 0  = A∩B∩M G i ​ = (A∩B)∖M –  inacessível ? G​ Ei  = A∖(B∪M) –  ambiente   adequado G Bi ​  = (A∩M)∖ B  – biótica desfavorável G Ai ​  = (B∩M)∖A – ambiente desfavorável M i​  = M∖(A∪B) – apenas acessível B i  =  B ∖(A∪M) – apenas biótica G Ei G Bi M i B i Sillero (2011) ,  Soberón & Peterson (2005) ,  Soberón(2007) ,  Peterson et al. (2011)   G Ai"
+  },
+  {
+    "slide": 167,
+    "text": "Aspectos complementares do BAM Bruno et al. (2003) B A M G invasão competição facilitação distribuição histórica"
+  },
+  {
+    "slide": 168,
+    "text": "Associações bióticas em JSDM Associação ≠ interação Cosentino et at. (2023) ,  Moens  et al. (2024) ,  Esser et al. (2025) ,   Dormann  et at. (2018)  ;  Poggiato et al. (2025)"
+  },
+  {
+    "slide": 169,
+    "text": "Interações Bióticas Gauze  (1934)"
+  },
+  {
+    "slide": 170,
+    "text": "2. Preparação dos Dados Sanín & Anderson (2018) Azul — A:  condições abióticas adequadas Verde — B:  condições bióticas favoráveis Vermelho — M:  região acessível à espécie Limitação principalmente abiótica Na região acessível, as condições bióticas favoráveis abrangem uma área maior que a abiótica B.  Limitação principalmente biótica Há áreas acessíveis e climaticamente adequadas fora do conjunto verde. A espécie não as ocupa porque falta uma condição biótica necessária ou existe uma interação impeditiva. C.  Coincidência das condições abióticas e bióticas As áreas adequadas segundo os dois conjuntos praticamente coincidem e estão acessíveis.  D.  Limitação de acessibilidade ou de fatores não representados As áreas abiótica e bioticamente adequadas também coincidem, mas parte delas está fora da região acessível."
+  },
+  {
+    "slide": 171,
+    "text": "Erola et al. (2025)"
+  },
+  {
+    "slide": 172,
+    "text": "2. Preparação dos Dados Lacunas de Conhecimento taxonomia  (Linnean) distribuição   geográfica  (Wallacean) populações  e  abundância  ( Prestonian ) evolução  (Darwinian) características  e  funções   ecológicas  ( Raunkiæran ) resposta  e  tolerância   abiótica  ( Hutchinsonian ) interações   bióticas  ( Eltonian ) Hortal et al. (2018)"
+  },
+  {
+    "slide": 173,
+    "text": "Por  que   conhecer  a  distribuição  das  espécies ?"
+  },
+  {
+    "slide": 174,
+    "text": ""
+  },
+  {
+    "slide": 175,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 176,
+    "text": ""
+  },
+  {
+    "slide": 177,
+    "text": "Bom dia!"
+  },
+  {
+    "slide": 178,
+    "text": ""
+  },
+  {
+    "slide": 179,
+    "text": "Tamanho da amostra e informação disponível A quantidade de dados influencia a estabilidade e a avaliação do modelo Importam também independência, cobertura ambiental, viés e incerteza dos registros Alguns métodos podem ser úteis com poucas ocorrências, mas isso não garante boa transferência Regras como “dez ocorrências por variável” são orientações condicionais, não critérios universais Ajustar a complexidade aos dados e comunicar as limitações da avaliação com amostras pequenas Benavides Rios et al. (2024)"
+  },
+  {
+    "slide": 180,
+    "text": ""
+  },
+  {
+    "slide": 181,
+    "text": ""
+  },
+  {
+    "slide": 182,
+    "text": ""
+  },
+  {
+    "slide": 183,
+    "text": "2. Preparação dos Dados Limpeza Ziska  et al. (2019) ;  Basooma et al. (2025) ;  De Melo et al. (2024)"
+  },
+  {
+    "slide": 184,
+    "text": "2. Preparação dos Dados Limpeza Barbosa & Alves-Souza (2025) Revisão  de 212  estudos   sobre   questões  de  qualidade  dos dados  em  SDM Identificação   incorreta   e  viés   espacial   são   os   principais   problemas Dados de  ciência   cidadã   são   preocupantes  ( habilidade  do  observador   ocupa  o 3 o   lugar ) Resolver  questões  de  qualidade  dos dados  em  SDMs  exige   estudos   mais   aprofundados  e  métodos   melhores O  tratamento  da  qualidade  dos dados  sensível   ao   contexto   aumenta  a  confiabilidade  e a  capacidade  de  previsão  dos SDMs"
+  },
+  {
+    "slide": 185,
+    "text": "2. Preparação dos Dados Detectabilidade de Espécies características intrínsecas do local sazonais metodológicas subjetivas (pesquisador) Guillera-Arroita  (2016)"
+  },
+  {
+    "slide": 186,
+    "text": "2. Preparação dos Dados Viés de Amostragem 1.144.629 registros (882.468 válidos) de 4.345 espécies vertebrados, artrópodes e angiospermas Concentração de registros junto a rotas de acesso(estradas e rios) Oliveira et al. (2016)"
+  },
+  {
+    "slide": 187,
+    "text": "2. Preparação dos Dados Viés de Amostragem Park et al. (2023) coordenadas geográficas são repetidamente atribuídas a milhares de registros de observação e/ou coleta de espécies"
+  },
+  {
+    "slide": 188,
+    "text": "2. Preparação dos Dados Viés de Amostragem Park et al. (2023)"
+  },
+  {
+    "slide": 189,
+    "text": "2. Preparação dos Dados Viés de Amostragem Coordenadas centrais do Brasil (> 8,5 milhões km 2 ) foram atribuídas a cerca de 100 mil registros de plantas Pontos que têm pelo menos 1.000 ocorrências associadas correspondem a cerca de 9 milhões de registros de plantas Park et al. (2023)"
+  },
+  {
+    "slide": 190,
+    "text": "2. Preparação dos Dados Viés de Amostragem Park & Davis (2017) Ordenação de pontos no  Condado de  Montrose , Colorado, no espaço climático  Pequenos pontos verdes representam cada célula do condado com resolução de 2,5 minutos As formas representam diferentes métricas do clima do condado O grande oval verde representa 95% do condado, e as setas representam autovetores (variáveis bioclimáticas)"
+  },
+  {
+    "slide": 191,
+    "text": "2. Preparação dos Dados Viés de Amostragem - Filtros Potencial para melhorar as previsões de distribuição de espécies para espécies em que os modelos são menos sensíveis à redução do tamanho da amostra Os vieses espaciais são uma característica intrínseca dos dados de ocorrência Podem afetar negativamente o desempenho dos modelos benefícios da remoção de vieses espaciais podem ser superados pelos efeitos prejudiciais da perda de dados Van  Eupen  et al. (2021) ,  Steen et al. (2021) ,  Wank & Jackson (2023) ,  Ten Caten & Dallas (2023) ,  Pilli et al. (2025) ,  Baker et al. (2024) ;  Lamboley & Fourcade (2024)"
+  },
+  {
+    "slide": 192,
+    "text": "2. Preparação dos Dados Dados de Ocorrência GBIF ( http://www.gbif.org ) VertNet  ( http://vertnet.org ) SpeciesLink  ( http://splink.cria.org.br ) REMIB ( https://www.conabio.gob.mx ) Canadensys  ( http://canadensys.net ) iDigBio  ( http://www.idigbio.org ) VectorMap  ( http://www.wrbu.org ) iNaturalist  ( https://www.inaturalist.org )  REFLORA ( https://reflora.jbrj.gov.br )  ORNIS ( https://sites.google.com/site/ornisnet/home ) BIEN ( https://bien.nceas.ucsb.edu/bien/ ) eBird  ( https://ebird.org )  "
+  },
+  {
+    "slide": 193,
+    "text": "Bases on-line: funções complementares GBIF,  SiBBr  e  speciesLink  integram registros de diferentes provedores. A cobertura depende das fontes participantes JABOT permite consultar acervos. Reflora oferece dados e imagens de espécimes, úteis para conferir a evidência Flora e Funga do Brasil, Catálogo da Fauna, COL e POWO apoiam a revisão de nomes, sinônimos e classificação iNaturalist  reúne observações documentadas. Conferir identificação, evidência e origem do registro Steinke et al. (2025)"
+  },
+  {
+    "slide": 194,
+    "text": "2. Preparação dos Dados Dados de Ocorrência informações compiladas com auxílio do ChatGPT (GPT-6.1 Sol Light) Base de dados Escopo taxonômico Cobertura geográfica Acesso pelo R GBIF Biodiversidade em geral Global Sim:  rgbif VertNet Principalmente vertebrados Global Sim:  rgbif .  rvertnet   é  histórico. speciesLink Multitáxon, forte presença de herbários Global,  concentração  no  Brasil Sim: splinkr e Rocc. Conferir API. REMIB / SNIB– CONABIO Multitáxon Ênfase no México Pacote  específico   mantido   não   identificado .  rgbif  para dados no GBIF. Canadensys Plantas, animais, fungos e outros grupos Canadá e registros globais de instituições canadenses Sim, via GBIF:  rgbif iDigBio Espécimes biológicos e paleontológicos Global, forte participação dos EUA Sim:  ridigbio  ( legado ) e  rgbif  (GBIF)."
+  },
+  {
+    "slide": 195,
+    "text": "2. Preparação dos Dados Dados de Ocorrência informações compiladas com auxílio do ChatGPT (GPT-6.1 Sol Light) Base de dados Escopo taxonômico Cobertura   geográfica Acesso pelo R VectorMap Artrópodes de importância médica Global Pacote específico mantido não identificado. iNaturalist Biodiversidade em geral, ciência cidadã Global, esforço amostral desigual Sim: rinat e API direta. REFLORA — Herbário Virtual Espécimes vegetais de herbários Ênfase no Brasil, incluindo acervos estrangeiros Sim: refloraR, via IPT. ORNIS Aves, espécimes e observações Internacional Via  VertNet /GBIF:  rgbif BIEN Dados botânicos, ocorrências, parcelas e atributos Global, cobertura mais forte nas Américas Sim: BIEN eBird Aves, listas com informação de esforço Global Sim:  rebird  (API) e auk ( processamento  do EBD  baixado )."
+  },
+  {
+    "slide": 196,
+    "text": "2. Preparação dos Dados Dados de Ocorrência - GBIF"
+  },
+  {
+    "slide": 197,
+    "text": "2. Preparação dos Dados Dados de Ocorrência - GBIF"
+  },
+  {
+    "slide": 198,
+    "text": "2. Preparação dos Dados Dados de Ocorrência - GBIF"
+  },
+  {
+    "slide": 199,
+    "text": "GBIF: backbone clássico e COL XR A referência taxonômica organiza nomes, sinônimos e classificação para interpretar e buscar ocorrências. O backbone clássico integrava o Catalogue of Life e outras fontes no GBIF. Sua última atualização foi em 2023. O COL XR reúne a base do Catalogue of Life e fontes adicionais. O GBIF.org passou a usá-lo como referência padrão. ChecklistBank é a infraestrutura de listas e versões que sustenta a montagem do catálogo. A mudança pode alterar os registros recuperados por uma busca. A correspondência taxonômica não confirma a identificação original. GBIF (2026) ;  Catalogue of Life ;  Ferreira De Lima et al. (2026)"
+  },
+  {
+    "slide": 200,
+    "text": "2. Preparação dos Dados Dados de Ocorrência - GBIF Zizka  et al. (2020)"
+  },
+  {
+    "slide": 201,
+    "text": "GBIF: qual produto baixar? Simple : tabela com campos de uso frequente após interpretação pelo GBIF. Pode atender à preparação inicial das ocorrências. Darwin Core  Archive  ( DwC-A ): pacote com registros, metadados e arquivos relacionados, útil para investigar a procedência. No  DwC-A  do GBIF,  occurrence.txt  contém os dados interpretados e  verbatim.txt  preserva os dados recebidos do publicador. Species   List : resumo de táxons recuperados pelo filtro. Não fornece a tabela de localizações necessária à calibração do modelo. Guardar o arquivo bruto e os metadados. Conferir o conteúdo efetivo do download antes de selecionar as colunas de análise. Banco de Dados Biológicos (2026) ;  GBIF: formatos"
+  },
+  {
+    "slide": 202,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 203,
+    "text": "Intervalo para Almoço"
+  },
+  {
+    "slide": 204,
+    "text": "Boa tarde!"
+  },
+  {
+    "slide": 205,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras Efeitos fisiológicos Diretos variáveis que provocam respostas fisiológicas Indiretos Recursos Grau de resposta Proximais diretamente relacionadas aos mecanismos ecológicos e fisiológicos Distais indiretamente relacionadas à ecologia da espécie (proxies)"
+  },
+  {
+    "slide": 206,
+    "text": "2. Preparação dos Dados Variáveis Preditoras Formato raster Categóricas (discretas) Contínuas (superfícies) Resolução espacial e temporal Várias fontes"
+  },
+  {
+    "slide": 207,
+    "text": ""
+  },
+  {
+    "slide": 208,
+    "text": ""
+  },
+  {
+    "slide": 209,
+    "text": ""
+  },
+  {
+    "slide": 210,
+    "text": "2. Preparação dos Dados Variáveis Preditoras Greco (2018)"
+  },
+  {
+    "slide": 211,
+    "text": "2. Preparação dos Dados Variáveis Preditoras Xavier et al. (2022) ,  Fick & Hijmans (2017) ,  Hijmans  et al. (2005) ;  Riley et al. (2024) Bio01 Bio05 Bio12 Bio14 Diferenres   resoluções   captam   fenômenos   em   diferentes   escalas"
+  },
+  {
+    "slide": 212,
+    "text": ""
+  },
+  {
+    "slide": 213,
+    "text": ""
+  },
+  {
+    "slide": 214,
+    "text": ""
+  },
+  {
+    "slide": 215,
+    "text": ""
+  },
+  {
+    "slide": 216,
+    "text": "2. Preparação dos Dados Variáveis Preditoras"
+  },
+  {
+    "slide": 217,
+    "text": "2. Preparação dos Dados Variáveis Preditoras 30” 2,5’ 5’ 10’"
+  },
+  {
+    "slide": 218,
+    "text": "2. Preparação dos Dados Variáveis Preditoras BCCVL General Modeling Information"
+  },
+  {
+    "slide": 219,
+    "text": "2. Preparação dos Dados Variáveis Preditoras original média near bilinear toy  <-  rast ( ncols =6,  nrows =6,  xmin =1,  xmax =6,  ymin =1,  ymax =6) values ( toy ) <-  rpois ( ncell ( toy ), lambda=3) plot ( toy ,  col  = color,  legend  = NA) text ( toy ,  digits =2,  cex  = 2) toy_mean  <- terra:: aggregate ( toy ,  fact =2,  fun =\" mean \") plot ( toy_mean ,  col  = color,  legend  = NA) text ( toy_mean ,  digits =2,  cex  = 2) toy_dis  <- terra:: disagg ( toy_mean , 2, \" bilinear \") plot ( toy_dis ,  col  = color,  legend  = NA) text ( toy_dis ,  digits =2,  cex  = 2)"
+  },
+  {
+    "slide": 220,
+    "text": "2. Preparação dos Dados Variáveis Preditoras Polanski et al. (2025) ;  Abdulwahab et al. (2022) ;  Hemp & Hemp (2024) Tendências espaciais da precipitação anual Mesmo em conjuntos de dados que concordam quanto à tendência geral para a bacia há divergências sobre as localidades onde ocorrem aumentos e diminuições da precipitação"
+  },
+  {
+    "slide": 221,
+    "text": "2. Preparação dos Dados Variáveis Preditoras"
+  },
+  {
+    "slide": 222,
+    "text": "2. Preparação dos Dados Variáveis Preditoras Xavier et al. (2022) ,  Fick & Hijmans (2017) ,  Hijmans et al. (2005)"
+  },
+  {
+    "slide": 223,
+    "text": ""
+  },
+  {
+    "slide": 224,
+    "text": "Chytrý  et al. (2026) ,  Haesen  et al. (2023) ,  Kollert et al. (2026) ,  Moudrý et al. (2023)  "
+  },
+  {
+    "slide": 225,
+    "text": ""
+  },
+  {
+    "slide": 226,
+    "text": "2. Preparação dos Dados Variáveis Preditoras"
+  },
+  {
+    "slide": 227,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 228,
+    "text": ""
+  },
+  {
+    "slide": 229,
+    "text": "Bom dia!"
+  },
+  {
+    "slide": 230,
+    "text": ""
+  },
+  {
+    "slide": 231,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras Colinearidade correlação entre variáveis preditoras pode afetar a estimativa dos coeficientes dos modelos pode afetar a interpretação do modelo pode afetar a projeção do modelo critério inicial, sujeito à relevância ecológica  Díaz-Vallejo et al. (2024)"
+  },
+  {
+    "slide": 232,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras"
+  },
+  {
+    "slide": 233,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras a estrutura de colinearidade pode mudar durante a projeção do modelo para outros períodos de tempo Feng et al. (2019)"
+  },
+  {
+    "slide": 234,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras Feng et al. (2019)"
+  },
+  {
+    "slide": 235,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras Identificação e Correção de Colinearidade Correlação (Pearson ou Spearman) Fator de Inflação de Variância ( Stepwise  VIF) VIF generalizado ( gVIF ) Decomposição de Variância (VD) Componentes Principais (PCA) Binomial  Stepwise   Logistic   Regression   (AIC + | r |>0,7) GLM  with   elastic -net  regularization  (GLM-EN) GAM  with   null-space   penalization  (GAM-NP) Processo interativo ( Forward  Variable  Selecion , data-driven,  Maxent) Dormann et al. (2012) ,  Naimi et al. (2014) ,  Feng et al. (2019) ,  Meyer et al. (2019) Adde et al. (2023) ,  Velazco et al. (2022) ,  Barbosa et al. (2015)"
+  },
+  {
+    "slide": 236,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras Dormann et al. (2012) ,  Naimi et al. (2014) ,  Feng et al. (2019) ,  Meyer et al. (2019)"
+  },
+  {
+    "slide": 237,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras Princípio da Parcimônia Navalha de  Ockham equilíbrio entre os extremos de ter poucos parâmetros (ajuste insuficiente –  underfitting ) e modelos que possuem muitos parâmetros (ajuste excessivo –  overfitting ) “Everything should be made as  simple as possible, but not simpler.”"
+  },
+  {
+    "slide": 238,
+    "text": ""
+  },
+  {
+    "slide": 239,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras Dormann et al. (2012) ,  Naimi et al. (2014) ,  Feng et al. (2019) ,  Meyer et al. (2019) Adde et al. (2023) ,  Velazco et al. (2022) ,  Barbosa et al. (2015) Método Fonte Pacote R Qtde .  Variáveis BSLR Dorman (2013) {mecofun} 8 \" Bio02 \" \"Bio13\" \"Bio06\" \" Bio08 \" \"Bio05\" \"Bio17\" \" Bio09 \" \"Bio15\" VIF Naimi et al. (2014) { usdm } 8 \" Bio02 \" \"Bio04\" \" Bio08 \" \" Bio09 \" \"Bio13\" \"Bio14\" \"Bio18\" \"Bio19\" VIF Velazco et al. (2022) {flexsdm} 10 \" Bio02 \" \"Bio03\" \" Bio08 \" \" Bio09 \" \"Bio10\" \"Bio13\" \"Bio14\" \"Bio15\" \"Bio18\" \"Bio19\" GLM, GAM, RF Adde et al. (2023) {covsel} 8 \" Bio02 \" \"Bio03\" \" Bio08 \" \" Bio09 \" \"Bio10\" \"Bio13\" \"Bio15\" \"Bio18\" GLM  Barbosa et al. (2015) {fuzzySim} 9 \" Bio02 \" \"Bio05\" \"Bio07\" \" Bio08 \" \" Bio09 \" \"Bio15\" \"Bio17\" \"Bio18\" \"Bio19\" Exemplo ilustrativo com dados reais"
+  },
+  {
+    "slide": 240,
+    "text": "2. Preparação dos Dados  Variáveis Preditoras Escolha aquelas: relevantes para a espécie (biologia/ecologia) tenham sentido dentro da área de estudo e para a pergunta de pesquisa escala temporal adequada para os objetivos escala espacial apropriada para a área de estudo e para os dados de ocorrência Justifique suas escolhas! Van Steenderen & Sutton (2024)"
+  },
+  {
+    "slide": 241,
+    "text": "2. Preparação dos Dados Fontes de Dados Vetoriais IBGE  – limites territoriais e censitários do Brasil GeoBank  – dados geológicos do Brasil SBDS  – uso da terra, hidrografia (estados) Pastagem.org  – dados sobre pastagens e rebanhos no Brasil CSR Maps  – vários dados vetoriais sobre o Brasil Ecoregions  –  biorregiões  e biomas do mundo GADM  – limites de áreas administrativas do mundo Natural Earth  – diversos dados vetoriais para o mundo HydroSHEDS  – hidrologia no mundo GRIP  – estradas do mundo"
+  },
+  {
+    "slide": 242,
+    "text": "2. Preparação dos Dados Fontes de Dados Raster MapBiomas  – uso e cobertura da terra no Brasil USGS  – dados de diversos satélites para o mundo SRTM  – dados de elevação para o mundo Global Forest  Watch  – cobertura vegetal para o mundo Global  Human   Footprint  – pegada ecológica para o mundo LUH2  – dados de uso atual e previsões de uso da terra WorldClim  – dados climáticos para o mundo CHELSA  – dados climáticos para o mundo EarthEnv  – cobertura da terra, nuvens, relevo e hidrografia para o mundo MARSPEC  – condições dos oceanos do mundo SoilGrids  – características físicas e químicas dos solos"
+  },
+  {
+    "slide": 243,
+    "text": "2. Preparação dos Dados Pacotes  R  de acesso a dados geodata  – vários dados utilizados como preditores em SDM/ENM geobr  – dados espaciais oficiais do Brasil rnaturalearth  – dados e mapas do Natural Earth osmdata  – acesso a dados do  OpenStreetMap marmap  – importar e plotar dados batimétricos e topográficos sdmpredictors  – vários dados utilizados como preditores em SDM/ENM envirem  – geração de variáveis bioclimáticas ENVIREM traitdata  – acesso a várias bases de dados de características ecológicas"
+  },
+  {
+    "slide": 244,
+    "text": "Coca-de- la - Iglesia  et al. (2023)"
+  },
+  {
+    "slide": 245,
+    "text": "2. Preparação dos Dados Outras Fontes de Dados Database of Global Data Sources for Biodiversity Conservation Monitoring The database includes  202 global data sources: 57 global biodiversity data sources of potential value in monitoring biodiversity state 62 global data sources of potential value in monitoring pressures and threats to biodiversity 39 global data sources of potential value in monitoring conservation responses to biodiversity loss 44 global data sources with multiple uses for biodiversity monitoring IUCN SSC Species Monitoring Specialist Group (2025)"
+  },
+  {
+    "slide": 246,
+    "text": "2. Preparação dos Dados Outras Fontes de Dados Um  catálogo  com  diversos  sites  que   disponibilizam  bases de dados  quantitativos   divididos   por   áreas   temáticas Bases multivariadas de dados Diversas temáticas Descrição das principais características Mais de 150 fontes de dados Bases de Dados e Fontes de Informações"
+  },
+  {
+    "slide": 247,
+    "text": "2. Preparação dos Dados Outras Fontes de Dados Open Traits Network comunidade global e descentralizada de pesquisadores e instituições que acolhe qualquer pessoa que trabalhe na padronização e integração de dados de características em todos os organismos Descrição das principais características Open  Traits  Network"
+  },
+  {
+    "slide": 248,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 249,
+    "text": "Intervalo para Almoço"
+  },
+  {
+    "slide": 250,
+    "text": "Boa tarde!"
+  },
+  {
+    "slide": 251,
+    "text": "Estrutura de Diretórios Sua espécie AAAA-MM-DD.R Ocorrências AAAA-MM-DD.XLSX download bruto GBIF (ZIP/CSV) download GBIF (XLSX) DOI para citação GBIF (TXT) download GBIF ( Rda ) Sua espécie"
+  },
+  {
+    "slide": 252,
+    "text": "Estrutura de Diretórios Sua espécie AAAA-MM-DD.R Ocorrências AAAA-MM-DD.XLSX download bruto GBIF (ZIP/CSV) download GBIF (XLSX) DOI para citação GBIF (TXT) download GBIF ( Rda ) criar pasta “Sua espécie” (Gênero espécie) copiar script de  Zaprionus   tuberculatus renomear script para “Sua espécie AAAA-MM-DD”.R abrir projeto “Modelagem” no  RStudio carregar script “Sua espécie AAAA-MM-DD”.R aguardar Sua espécie"
+  },
+  {
+    "slide": 253,
+    "text": ""
+  },
+  {
+    "slide": 254,
+    "text": "2. Preparação dos Dados Preparar o ambiente Carregar ocorrências (GBIF) Limpar ocorrências Gerar mapa e tabela de dados para conferência Carregar variáveis preditoras Gerar estatísticas descritivas das ocorrências Gráficos de correlação das variáveis preditoras Filtrar ocorrências Mapa dos registros de ocorrências  Bactrocera  dorsalis Bactrocera  dorsalis"
+  },
+  {
+    "slide": 255,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 256,
+    "text": "Capítulo 3 Ajuste do Modelo"
+  },
+  {
+    "slide": 257,
+    "text": "Passos para Modelagem"
+  },
+  {
+    "slide": 258,
+    "text": "3. Ajuste do Modelo Sillero  (2011) ,  Brown &  Yoder  (2015)"
+  },
+  {
+    "slide": 259,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos Gutierrez et al. (2021)"
+  },
+  {
+    "slide": 260,
+    "text": "Formas de resposta: uma hipótese didática Curvas unimodais representam uma hipótese simples de ótimo ambiental Elipsoides e formas convexas são simplificações úteis em alguns modelos de nicho Essas formas não são propriedades universais de toda espécie ou conjunto de variáveis A disponibilidade ambiental, a amostragem e as interações afetam as respostas observadas"
+  },
+  {
+    "slide": 261,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 262,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 263,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 264,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 265,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 266,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 267,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 268,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 269,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 270,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 271,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 272,
+    "text": "3. Ajuste do Modelo Tipos de Respostas dos Algoritmos"
+  },
+  {
+    "slide": 273,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 274,
+    "text": ""
+  },
+  {
+    "slide": 275,
+    "text": "Bom dia!"
+  },
+  {
+    "slide": 276,
+    "text": ""
+  },
+  {
+    "slide": 277,
+    "text": ""
+  },
+  {
+    "slide": 278,
+    "text": ""
+  },
+  {
+    "slide": 279,
+    "text": ""
+  },
+  {
+    "slide": 280,
+    "text": "3. Ajuste do Modelo DOMAIN ( Gower  Distance) Vantagens simples: métrica de similaridade apenas de presença eficiente para amostras pequenas Limitações ausência de contraste ambiental assume que todas as variáveis têm a mesma importância superestimativa com poucas ocorrências gera índice de similaridade – sem relação com probabilidade de ocorrência Carpenter et al. (1993)"
+  },
+  {
+    "slide": 281,
+    "text": ""
+  },
+  {
+    "slide": 282,
+    "text": "3. Ajuste do Modelo Maximum   Entropy  (Maxent) Vantagens usa presenças e  background ajusta respostas não lineares e interações regularização controla a complexidade Limitações sensível ao viés e à escolha do background exige ajuste de feições e regularização a saída depende de pressupostos e da transformação Elith et al. (2011) ,  flexsdm: fit_max Presenças e ambiente disponível ( background ) contrastados para estimar adequabilidade"
+  },
+  {
+    "slide": 283,
+    "text": ""
+  },
+  {
+    "slide": 284,
+    "text": "3. Ajuste do Modelo Random Forest (RAF) Vantagens captura não linearidades e interações agrega árvores e reduz sua variabilidade permite avaliar a importância dos preditores Limitações sensível ao desenho amostral e às classes importância não demonstra causalidade transferência para ambientes novos é limitada Breiman (2001) ,  Pichler & Hartig (2023) Árvores com amostras e preditores aleatórios combinam suas predições"
+  },
+  {
+    "slide": 285,
+    "text": ""
+  },
+  {
+    "slide": 286,
+    "text": "3. Ajuste do Modelo Generalized Boosted Regression Models  (GBM) Vantagens captura não linearidades e interações adiciona árvores que reduzem a perda aceita diferentes distribuições da resposta Limitações exige ajuste da taxa, profundidade e número de árvores pode  sobreajustar  sem regularização árvores extrapolam mal além do ambiente amostrado Elith et al. (2008) ,  Pichler & Hartig (2023) Árvores sucessivas corrigem o ajuste e somam contribuições à predição"
+  },
+  {
+    "slide": 287,
+    "text": ""
+  },
+  {
+    "slide": 288,
+    "text": "3. Ajuste do Modelo Artificial Neural Network  (NET) Vantagens aprende respostas não lineares e interações combina preditores por conexões ponderadas regularização ajuda a controlar a complexidade Limitações sensível à escala dos preditores e à inicialização exige ajuste de neurônios e penalização interpretação e transferência exigem cautela Lek & Guégan (1999) Entradas ambientais passam por neurônios e produzem uma resposta"
+  },
+  {
+    "slide": 289,
+    "text": ""
+  },
+  {
+    "slide": 290,
+    "text": "3. Ajuste do Modelo Support Vector Machine  (SVM) Vantagens busca uma fronteira com ampla margem kernels permitem fronteiras não lineares penalização controla o compromisso entre margem e erros Limitações sensível à escala dos preditores exige ajuste do custo e do kernel escore de decisão não é probabilidade calibrada Cortes & Vapnik (1995) A fronteira separa classes pela margem definida pelos vetores de suporte"
+  },
+  {
+    "slide": 291,
+    "text": ""
+  },
+  {
+    "slide": 292,
+    "text": "3. Ajuste do Modelo Gaussian Process  (GAU) Vantagens ajusta respostas suaves e interações complexas permite incorporar conhecimento prévio oferece uma estrutura para incerteza preditiva Limitações depende da função de covariância e dos priors custo aumenta com o tamanho da amostra incerteza depende do modelo e das aproximações Golding & Purse (2016) Funções suaves relacionam ambientes semelhantes, com incerteza condicional"
+  },
+  {
+    "slide": 293,
+    "text": ""
+  },
+  {
+    "slide": 294,
+    "text": "3. Ajuste do Modelo Generalized Linear Model  (GLM) Vantagens coeficientes e hipóteses são explícitos aceita preditores contínuos e categóricos permite famílias de resposta e funções de ligação Limitações a forma dos termos precisa ser especificada sensível à colinearidade e a pontos influentes complexidade deve ser sustentada pelos dados Guisan et al. (2002) Preditor linear e função de ligação exemplo binomial com ligação logit"
+  },
+  {
+    "slide": 295,
+    "text": ""
+  },
+  {
+    "slide": 296,
+    "text": "3. Ajuste do Modelo Generalized Additive Model  (GAM) Vantagens ajusta respostas não lineares com suavizadores permite examinar efeitos parciais penalização controla a flexibilidade das curvas Limitações exige escolha e diagnóstico da suavização interações precisam de termos específicos extrapolação e curvas pouco apoiadas são incertas Wood (2017) Efeitos suaves se somam na escala da função de ligação"
+  },
+  {
+    "slide": 297,
+    "text": ""
+  },
+  {
+    "slide": 298,
+    "text": ""
+  },
+  {
+    "slide": 299,
+    "text": ""
+  },
+  {
+    "slide": 300,
+    "text": "3. Ajuste do Modelo Ensemble Vantagens reduz a dependência de um único modelo desempenho a comparar com os modelos individuais integração de diferentes abordagens Limitações complexidade computacional dificuldade de interpretação  média  (threshold),  média ponderada, mediana complexidade para calibrar e executar o ajuste de diversos modelos diferentes pode combinar modelos com vieses compartilhados Araújo & New (2007) ,  Montoya-Jiménez et al. (2022) ,  Shabani et al. (2025) ;  Rose et al. (2024)"
+  },
+  {
+    "slide": 301,
+    "text": "3. Ajuste do Modelo  Algoritmos: um ponto de partida GLM e GAM ajudam a explicitar relações, com complexidade e pressupostos controlados RAF, GBM, SVM, NET e GAU oferecem diferentes flexibilidades MAX utiliza presenças e  background  e requer atenção à regularização e às features Poucos dados exigem simplificação e avaliação cuidadosa, qualquer que seja o método Comparar modelos sob o mesmo delineamento O  ensemble  não elimina vieses compartilhados"
+  },
+  {
+    "slide": 302,
+    "text": "Ensemble Ensemble Classes"
+  },
+  {
+    "slide": 303,
+    "text": "Intervalo para Almoço"
+  },
+  {
+    "slide": 304,
+    "text": "Boa tarde!"
+  },
+  {
+    "slide": 305,
+    "text": "3. Ajuste do Modelo Pichler  &  Hartig  (2023)"
+  },
+  {
+    "slide": 306,
+    "text": "3. Ajuste do Modelo Urbina-Cardona et al. (2019) 1993 a 2018"
+  },
+  {
+    "slide": 307,
+    "text": "3. Ajuste do Modelo Qiao et al. (2015)"
+  },
+  {
+    "slide": 308,
+    "text": "Ausência observada: a espécie não foi detectada sob um protocolo e esforço conhecidos Pseudoausência : local selecionado para contraste, sem comprovação automática de ausência Background : amostra das condições disponíveis no domínio de calibração Quantidade de pontos, distribuição, exclusões e pesos dependem do algoritmo e do delineamento No nosso roteiro: Maxent utiliza ocorrências e  background  para o ajuste do modelo, e contrastes entre ocorrências e  pseudoausências  para a avaliação; os demais algoritmos utilizaram ocorrências e  pseudoausências 3. Ajuste dos Modelos Ausências X  Pseudoausências  X Background Whitford et al. (2024)"
+  },
+  {
+    "slide": 309,
+    "text": "3. Ajuste dos Modelos Ausências X  Pseudoausências  X Background Merow et al. (2013) ,  Feng et al. (2019) ,  Esser (2021) ;  Steen et al. (2024)"
+  },
+  {
+    "slide": 310,
+    "text": "3. Ajuste dos Modelos Ausências em Ecologia zeros falsos falta  de  experiência  do  observador : (a) e (b) projeto  experimental  pobre : (c)  até  (h) zeros   verdadeiros relacionados   ao   sistema   ecológico   em   estudo zeros  estruturais :  ( i ) (j) (k) emergentes  da  variabilidade  de  amostragem zeros  aleatórios  (l) Blasco-Moreno et al. (2019)"
+  },
+  {
+    "slide": 311,
+    "text": "3. Ajuste do Modelo Área de Calibração (CA) Região geográfica Abordagem simples retângulo envolvente ou limites políticos/administrativos das ocorrências Restrições espaciais baseado na capacidade de dispersão da espécie áreas não amostradas mas potencialmente adequadas convex   hulls kernel  density   estimation buffers Rojas-Soto et al. (2024) ,  Ajene et al. (2020) ,  Caetano et al. (2018) ,  Acevedo et al. (2012) , Allouche et al. (2008) ,  Mendes et al. (2020)   "
+  },
+  {
+    "slide": 312,
+    "text": "3. Ajuste do Modelo M e área de calibração: uma hipótese explícita M representa a região acessível à espécie no intervalo considerado A área de calibração operacionaliza um domínio para ajuste e contraste ambiental Buffers, ecorregiões, bacias e conhecimento especializado podem apoiar sua delimitação Classes climáticas ou ecorregiões podem definir uma hipótese ambiental, mas não demonstram acessibilidade histórica Justificar limites, avaliar sensibilidade e distinguir calibração de projeção"
+  },
+  {
+    "slide": 313,
+    "text": "3. Ajuste do Modelo Área de Calibração (CA)"
+  },
+  {
+    "slide": 314,
+    "text": "3. Ajuste do Modelo Área de Calibração (CA)"
+  },
+  {
+    "slide": 315,
+    "text": "3. Ajuste do Modelo Área de Calibração (CA) Qual modelo é mais adequado?"
+  },
+  {
+    "slide": 316,
+    "text": "3. Ajuste do Modelo Área de Calibração (CA) Qual modelo é mais adequado?"
+  },
+  {
+    "slide": 317,
+    "text": "3. Ajuste do Modelo Área de Calibração (CA) Rojas-Soto et al. (2024) ,  Soberón (2010) ,  Soberón & Peterson (2005) ,  Soberón & Osorio-Olvera (2023) ,  Barve et al. (2011) ,  Mota-Vargas et al. (2013)"
+  },
+  {
+    "slide": 318,
+    "text": "3. Ajuste do Modelo Área de Calibração (CA)"
+  },
+  {
+    "slide": 319,
+    "text": "Barbosa (2026)"
+  },
+  {
+    "slide": 320,
+    "text": "Alterar o domínio muda as condições disponíveis e o contraste com as presenças Áreas mais amplas podem incluir ambientes muito distintos e elevar a discriminação aparente O efeito depende da espécie, dos preditores, da amostragem e do método Métricas de modelos com domínios diferentes não devem ser comparadas sem contextualização A delimitação precisa de justificativa ecológica e coerência com o objetivo 3. Ajuste do Modelo Área de Calibração (CA) Anderson & Raza  ( 2010) ,  Barbet-Massin et al. (2012) ,  Amaro et al. (2023)   ;  Bergman et al. (2024) ;  Luna et al. (2024)"
+  },
+  {
+    "slide": 321,
+    "text": "3. Ajuste do Modelo Área de Calibração (CA)"
+  },
+  {
+    "slide": 322,
+    "text": "3. Ajuste do Modelo Overfitting  X  Underfitting Gráfico gerado com auxílio do ChatGPT"
+  },
+  {
+    "slide": 323,
+    "text": "3. Ajuste do Modelo Overfitting  X  Underfitting Gráfico gerado com auxílio do ChatGPT"
+  },
+  {
+    "slide": 324,
+    "text": "3. Ajuste do Modelo Overfitting  X  Underfitting Gráfico gerado com auxílio do ChatGPT"
+  },
+  {
+    "slide": 325,
+    "text": "3. Ajuste do Modelo Overfitting  X  Underfitting Gráfico gerado com auxílio do ChatGPT"
+  },
+  {
+    "slide": 326,
+    "text": "3. Ajuste do Modelo Overfitting  X  Underfitting Gráfico gerado com auxílio do ChatGPT Sousa‐Guedes et al. (2026)"
+  },
+  {
+    "slide": 327,
+    "text": "3. Ajuste do Modelo Alguns Pacotes  R flexsdm  (Velazco) dismo  ( Hijmans  &  Elith ) ENMeval  (Kass) SDMtune  ( Vignali ) modleR  (Sánchez-Tapia) Wallace  ( Johnson) hSDM  ( Vieilledent ) embarcadero  (Carlson)"
+  },
+  {
+    "slide": 328,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 329,
+    "text": ""
+  },
+  {
+    "slide": 330,
+    "text": "Bom dia!"
+  },
+  {
+    "slide": 331,
+    "text": ""
+  },
+  {
+    "slide": 332,
+    "text": ""
+  },
+  {
+    "slide": 333,
+    "text": "3. Ajuste do Modelo Definição da área de calibração Particionamento dos dados Pontos de  background e pseudo-ausências Seleção de variáveis preditoras (colinearidade) Gráficos no Espaço Ambiental Ajuste e seleção dos modelos individuais Ajuste do  ensemble"
+  },
+  {
+    "slide": 334,
+    "text": "Intervalo para Almoço"
+  },
+  {
+    "slide": 335,
+    "text": "Capítulo 4 Avaliação do Modelo"
+  },
+  {
+    "slide": 336,
+    "text": "Passos para Modelagem Zurell et. al (2020)"
+  },
+  {
+    "slide": 337,
+    "text": "4. Avaliação do Modelo Particionamento dos Dados O modelo deveria ser validado com um conjunto de dados independente raramente disponível Alternativa: dividir o conjunto de dados em dados de treinamento (calibração) e teste (validação) Métodos convencionais k-folds   repeated   k-folds leave - one -out  cross-validation   bootstrap   partitioning Fielding & Bell (1997)  "
+  },
+  {
+    "slide": 338,
+    "text": "Avaliação do roteiro: alcance e limites Planejar partições antes de usar suas métricas para selecionar modelos. No roteiro atual, seleção e ajuste utilizam as partições de avaliação disponíveis. A seleção de variáveis precede a validação cruzada. A avaliação não é externa nem aninhada de todo o procedimento. Partições espaciais ajudam a avaliar transferência, conforme sua construção. Informar essas limitações e evitar interpretar o desempenho como garantia para locais ou períodos novos."
+  },
+  {
+    "slide": 339,
+    "text": "Fielding & Bell (1997) ,  Guisan et al. (2017)  "
+  },
+  {
+    "slide": 340,
+    "text": ""
+  },
+  {
+    "slide": 341,
+    "text": "4. Avaliação do Modelo Particionamento dos Dados particionamento geográfico (blocos e bandas) Roberts et al. (2017) ,  Santini et al. (2021) ,  Velazco et al. (2019) ,  Valavi  et al. (2019) ;  Bald et al. (2023)"
+  },
+  {
+    "slide": 342,
+    "text": "4. Avaliação do Modelo Particionamento dos Dados particionamento espacial otimizado com critérios ambientais  menor autocorrelação espacial, pelo  I  de Moran a máxima similaridade ambiental, considerando a distância Euclidiana diferença mínima de quantidade de registros entre dados de treinamento e teste, dada pelo desvio padrão Velazco et al. (2019)"
+  },
+  {
+    "slide": 343,
+    "text": "4. Avaliação do Modelo Matriz de Confusão Matriz  de  Confusão (2x2) Previsto Presença  (1) Ausência  (0) Soma Referência Presença  (1) Presença   verdadeira  (TP) Ausência  falsa (FN) TP + FN Ausência (0) Presença   falsa (FP) Ausência verdadeira (TN) FP + TN Soma TP + FP FN + TN TP + TN + FP + FN Contabiliza  os acertos e erros do modelo Permite  estabelecer métricas  de avaliação e comparação TP = ocorrências corretamente classificadas FN = presenças omitidas pelo modelo FP = background/ pseudoausência  classificado como presença TN = background/ pseudoausência  corretamente classificados"
+  },
+  {
+    "slide": 344,
+    "text": "4. Avaliação do Modelo Matriz de Confusão Threshold  Baixo erro de omissão (FN) é problema abrangente, pouco específico Ex. buscar espécies raras ou estimar alcance de espécies invasoras Threshold  Alto erro de comissão (FP) é problema conservador, restrito Ex. reintrodução de espécies Contabiliza  os acertos e erros do modelo Permite  estabelecer métricas  de avaliação e comparação Matriz  de  Confusão (2x2) Previsto Presença  (1) Ausência  (0) Soma Referência Presença  (1) Presença   verdadeira  (TP) Ausência  falsa (FN) TP + FN Ausência (0) Presença   falsa (FP) Ausência verdadeira (TN) FP + TN Soma TP + FP FN + TN TP + TN + FP + FN TP = ocorrências corretamente classificadas FN = presenças omitidas pelo modelo FP = background/ pseudoausência  classificado como presença TN = background/ pseudoausência  corretamente classificados"
+  },
+  {
+    "slide": 345,
+    "text": "MÉTRICAS DE AVALIAÇÃO 1/3  |  Acertos, omissão e comissão após aplicar um limiar Sigla  Nome(s) Fórmula / cálculo O que significa Sentido   desejável Referência s TPR / Sensitivity  / Recall  Sensibilidade True Positive Rate TP / (TP + FN) Fração das presenças corretamente detectadas. ↑ até 1 Ler junto com TNR. Fielding & Bell (1997) TNR / Specificity Especificidade True Negative Rate TN / (TN + FP) Fração da classe 0 corretamente rejeitada. ↑ até 1 Ler junto com TPR. Fielding & Bell (1997) OR / FNR / UPR Taxa de omissão False Negative Rate FN / (TP + FN) = 1 − TPR Fração das presenças previstas como ausência. ↓ até 0 Omissão baixa. Fielding & Bell (1997) FPR Taxa de falsos positivos False Positive Rate FP / (TN + FP) = 1 − TNR Fração da classe 0 prevista como presença. ↓ até 0 Não é FP/(TP+FP). Fielding & Bell (1997) W_TPR_TNR Média ponderada de TPR e TNR w·TPR + (1−w)·TNR w = n₀ / (n₀ + n₁) Pondera os acertos pela frequência da outra classe. ↑ até 1 Depende de n₀:n₁. Jadhav (2020) TSS True Skill Statistic Estatística de habilidade TPR + TNR − 1 Combina a detecção das duas classes. ↑ até 1; 0 sem habilidade < 0: classificação inversa. Allouche et al. (2006) bACC  / BA Balanced Accuracy Acurácia balanceada (TPR + TNR) / 2 = (TSS + 1) / 2 Dá o mesmo peso às duas classes. ↑ até 1 0,5: referência sem habilidade. Allouche et al. (2006) TP e TN: acertos; FP e FN: erros. n₁ = TP+FN; n₀ = TN+FP; N = n₁+n₀. Compare modelos com o mesmo desenho de validação. Liu et al. (2005) ,  Pearson et at. (2007) ,  Li & Guo (2013) ,  Liu et al. (2013) ,  Liu et at. (2016) ,  Fielding & Bell (1997)"
+  },
+  {
+    "slide": 346,
+    "text": "MÉTRICAS DE AVALIAÇÃO 2/3  |  Similaridade, concordância e discriminação Sigla  Nome(s) Fórmula / cálculo O que significa Sentido   desejável Referência SORENSEN / F1 Índice de Sørensen F1-score / Dice 2TP / (2TP + FP + FN) Equilibra precisão e sensibilidade; ignora TN. ↑ até 1 Sensível à proporção das classes. Fielding & Bell (1997) JACCARD /  IoU CSI  Índice de Jaccard Critical Success Index TP / (TP + FP + FN) Acertos de presença em relação à união. ↑ até 1 Ignora TN. Fielding & Bell (1997) FPB F-measure on presence-background 2·JACCARD = 2TP / (TP + FP + FN) Concordância entre presença e background; versão do pacote. ↑ até 2 nesta implementação Não interpretar como F1. Li & Guo (2013) KAPPA /  κ Kappa de Cohen (pₒ − pₑ) / (1 − pₑ) pₒ = (TP + TN) / N Concordância corrigida pela concordância esperada. ↑ até 1; 0 ao acaso Depende da prevalência. Allouche et al. (2006) MCC /  φ Matthews Correlation Coefficient (TP·TN − FP·FN) / √[(TP+FP)(TP+FN)    (TN+FP)(TN+FN)] Correlação entre classes previstas e de referência. ↑ até 1; 0 sem associação −1: inversão completa. Matthews (1975) AUC / AUROC Área sob a curva ROC U / (n₁·n₀) U: estatística Mann–Whitney Ordena presenças acima da classe 0; sem limiar único. ↑ até 1; 0,5 ao acaso Depende da área e do contraste. Fielding & Bell (1997) BOYCE / CBI Continuous Boyce Index Índice de Boyce contínuo ρSpearman(sⱼ, Pⱼ/Eⱼ) Relaciona adequabilidade e frequência presença/esperado. ↑ até 1; ≈0 sem tendência <0: tendência contrária. Hirzel et al. (2006) Kappa: pₑ = [(TP+FP)(TP+FN) + (FN+TN)(FP+TN)]/N². CBI: sⱼ = adequabilidade; Pⱼ e Eⱼ = frequências relativas em presenças e background. Liu et al. (2005) ,  Pearson et at. (2007) ,  Li & Guo (2013) ,  Liu et al. (2013) ,  Liu et at. (2016) ,  Fielding & Bell (1997)"
+  },
+  {
+    "slide": 347,
+    "text": "ERROS, INCERTEZA E LIMIARES 3/3  |  Predições contínuas e critérios de corte usados no fluxo Sigla Nome(s) Fórmula / cálculo O que significa Sentido   desejável Referência IMAE / 1−MAE Inverse Mean Absolute Error Erro absoluto invertido 1 − Σᵢ |pᵢ − yᵢ| / N Proximidade das predições aos rótulos 0/1. ↑ até 1 Compare com um modelo nulo. Willmott & Matsuura (2005) Inverse Brier Score (1-MSE; CRPS in  flexsdm )  Brier Score invertido (1 − erro quadrático médio) 1 − Σᵢ (pᵢ − yᵢ)² / N Penaliza mais os erros de maior magnitude. ↑ até 1 nesta saída Brier original: menor é melhor. Brier (1950) RMSE Root-Mean-Square Error Raiz do erro quadrático médio √[Σᵢ (pᵢ − yᵢ)² / N] Fluxo: √(1 − CRPS_mean) Magnitude dos erros na escala das predições. ↓  até  0 Compare no  mesmo  conjunto. Willmott & Matsuura (2005) Mean PSD Mean Predictive Standard Deviation (1/m) Σⱼ SDₖ(pⱼₖ) Dispersão média entre predições de réplicas/modelos. ↓: maior concordância Não comprova acurácia. Buisson et al. (2010) MTP / LPT Mínimo nas presenças Minimum training presence t = min(pᵢ nas presenças) Menor adequabilidade nas presenças de referência. Não mede qualidade OR=0 no conjunto que define t. Pearson et al. (2007) MTP10 / 10TP 10th percentile presence Percentil 10 das presenças t = Q₀,₁₀(pᵢ nas presenças) No fluxo: quantile(type=1) Admite omitir a cauda inferior das presenças de referência. Não mede qualidade Omissão ≈10%, depende de n. Liu et al. (2005) maxSSS  /  maxTSS Maximum sensitivity plus specificity t = argmaxₜ [TPR(t)+TNR(t)] Limiar que maximiza TSS no conjunto usado na seleção. Não valida o modelo Avaliar em dados separados. Liu et al. (2013) pᵢ =  predição   contínua ; yᵢ =  rótulo  0/1; m =  locais  e k =  réplicas / modelos . MTP e MTP10  usam  as  predições  do ensemble  nas   presenças  no  nosso   fluxo . Liu et al. (2005) ,  Pearson et at. (2007) ,  Li & Guo (2013) ,  Liu et al. (2013) ,  Liu et at. (2016) ,  Fielding & Bell (1997)"
+  },
+  {
+    "slide": 348,
+    "text": ""
+  },
+  {
+    "slide": 349,
+    "text": "4. Avaliação do Modelo Limiares ( thresholds) Maxent,  Bactrocera   dorsalis ,  MaxSSS  = 0,2372"
+  },
+  {
+    "slide": 350,
+    "text": "4. Avaliação do Modelo Limiares ( thresholds) Maxent,  Bactrocera   dorsalis , MTP = 0,0021, MTP10 = 0,1681"
+  },
+  {
+    "slide": 351,
+    "text": "4. Avaliação do Modelo Limiares e consequências dos erros"
+  },
+  {
+    "slide": 352,
+    "text": "4. Avaliação do Modelo Limiares e consequências dos erros Omissão (FN): ocorrência real abaixo do limiar relevante para: busca de populações e vigilância Comissão (FP): ausência observada classificada acima do limiar relevante para: conservação, restauração, realocação Com  pseudoausências  ou background, FP não comprova comissão ecológica espécie pode ocorrer sem ter sido registrada comissão potencial Limiar baixo tende a reduzir omissões e ampliar a área classificada como adequada maior esforço de busca ou vigilância O custo de cada erro depende da decisão"
+  },
+  {
+    "slide": 353,
+    "text": ""
+  },
+  {
+    "slide": 354,
+    "text": "Bom dia!"
+  },
+  {
+    "slide": 355,
+    "text": ""
+  },
+  {
+    "slide": 356,
+    "text": "4. Avaliação do Modelo Null  Models Bohl  et al. (2019) ;  Warren et al. (2026)"
+  },
+  {
+    "slide": 357,
+    "text": "Fielding & Bell (1997) ,  Araújo et al. (2005) ,  Jiménez-Valverde (2012) ,  Lobo et at. (2008) 4. Avaliação do Modelo Independente de Limiar (sensibilidade = TPR) (1 – especificidade = FPR)"
+  },
+  {
+    "slide": 358,
+    "text": "Fielding & Bell (1997) ,  Araújo et al. (2005) ,  Jiménez-Valverde (2012) ,  Lobo et at. (2008) 4. Avaliação do Modelo Independente de Limiar (sensibilidade = TPR) (1 – especificidade = FPR) acerto das ocorrências erro do  background / pseudoausência avalia  a  capacidade  do  modelo   em   distinguir   presenças   conhecidas  do conjunto de  background  ( ou   pseudoausências ) , e  não   presenças  de  ausências  reais"
+  },
+  {
+    "slide": 359,
+    "text": "4. Avaliação do Modelo AUC  x   pAUC Fielding & Bell (1997) ,  Araújo et al. (2005) ,  Jiménez-Valverde (2012) ,  Lobo et at. (2008) pseudoausências background pseudoausências background"
+  },
+  {
+    "slide": 360,
+    "text": "4. Avaliação do Modelo AUC  x   pAUC Fielding & Bell (1997) ,  Araújo et al. (2005) ,  Jiménez-Valverde (2012) ,  Lobo et at. (2008)"
+  },
+  {
+    "slide": 361,
+    "text": "4. Avaliação do Modelo Independente de Limiar AUC ROC resume a discriminação ao longo dos limiares; não incorpora custos de decisão avalia ordenação dos escores, não sua calibração absoluta sofre influência da extensão da área de calibração diversas outras críticas, mas ainda muito utilizada em vários trabalhos Peterson et al. (2008) ,  Elith et al. (2006) ,  Lobo et al. (2008) ;  Jimenez-Valverde (2026) ;  Bracho-Estévanez et al. (2024)"
+  },
+  {
+    "slide": 362,
+    "text": "4. Avaliação do Modelo Erro de Omissão X Comissão"
+  },
+  {
+    "slide": 363,
+    "text": "4. Avaliação do Modelo O “corte” pelo  threshold threshold"
+  },
+  {
+    "slide": 364,
+    "text": "4. Avaliação do Modelo MTP = 0,0033 P10 = 0,1374 maxSSS  = 0,3192"
+  },
+  {
+    "slide": 365,
+    "text": "4. Avaliação do Modelo th  = 0,231 th  = 0,100 ( sens .) th  = 0,500 ( spec .)"
+  },
+  {
+    "slide": 366,
+    "text": "4. Avaliação do Modelo maxSSS Espécie endêmica Objetivo: Identificar áreas com adequabilidade ambiental A escolha do  threshold  está adequada? Adeq. > 0,3192"
+  },
+  {
+    "slide": 367,
+    "text": "4. Avaliação do Modelo maxSSS Espécie invasora Objetivo: Identificar locais críticos para cultivo de hospedeiros  preferenciais A escolha do  threshold  está adequada? Adeq. > 0,3192"
+  },
+  {
+    "slide": 368,
+    "text": "4. Avaliação do Modelo P10 Espécie invasora Objetivo: Identificar locais críticos para cultivo de hospedeiros  preferenciais A escolha do  threshold  está adequada? Adeq. > 0,1374"
+  },
+  {
+    "slide": 369,
+    "text": "4. Avaliação do Modelo Espécie invasora Objetivo: Identificar locais críticos para cultivo de hospedeiros  preferenciais A escolha das classes está adequada? Classe Inferior Superior Unsuitable 0 MTP Marginal MTP P10 / 2 Moderate P10 / 2 P10 High P10 Mediana Very High Mediana 1 Classe Inferior Superior Unsuitable 0 Marginal Moderate High Very High Adequabilidade"
+  },
+  {
+    "slide": 370,
+    "text": "4. Avaliação do Modelo Espécie endêmica Objetivo: Identificar áreas com adequabilidade ambiental A escolha das classes está adequada? Classe Inferior Superior Unsuitable 0 MTP Marginal MTP P10 / 2 Moderate P10 / 2 P10 High P10 Mediana Very High Mediana 1 Classe Inferior Superior Unsuitable 0 Marginal Moderate High Very High Adequabilidade"
+  },
+  {
+    "slide": 371,
+    "text": "4. Avaliação do Modelo MTP = 0,0033 pAUC : 0,1000 ( sens .) MTP10 = 0,1374 AUC: 0,2310 (eq.) maxSSS  = 0,3192 pAUC : 0,5000 ( spec .)"
+  },
+  {
+    "slide": 372,
+    "text": "4. Avaliação do Modelo Maxent (1.5 QHP) max_sens_spec  / TSS Maxent (1.25 LQHP) max_sorensen  / SORENSEN Maxent (4.25 LQ) max_fpb  / BOYCE"
+  },
+  {
+    "slide": 373,
+    "text": "4. Avaliação do Modelo Maxent (1.5 QHP) max_sens_spec  / TSS Maxent (4.25 LQ) max_sens_spec  / BOYCE"
+  },
+  {
+    "slide": 374,
+    "text": ""
+  },
+  {
+    "slide": 375,
+    "text": ""
+  },
+  {
+    "slide": 376,
+    "text": "Elemento Significado  Linha roxa Mediana das predições dos modelos selecionados em cada valor do preditor. Linhas cinza finas Curvas individuais dos modelos, permitindo visualizar diferenças entre suas respostas. Faixa cinza ao redor da mediana Intervalo interquartil, entre os percentis 25 e 75 das predições. Mostra dispersão entre modelos, não intervalo de confiança. Área verde-clara Intervalo entre o menor e o maior valor do preditor nos registros de presença. Não representa densidade de ocorrências nem toda a faixa de calibração. Área laranja-clara, à esquerda Valores existentes na área de projeção abaixo do mínimo da base de calibração: cauda inferior não análoga. Área azul-clara, à direita Valores existentes na área de projeção acima do máximo da base de calibração: cauda superior não análoga. Linha vertical laranja contínua Valor mínimo do preditor na base de calibração. Linha vertical azul-clara contínua Valor máximo do preditor na base de calibração. Linhas verticais pontilhadas laranja-escura e azul-escura Respectivamente, mínimo e máximo do preditor na área de projeção. Linha vermelha tracejada horizontal Referência de clamping: prolonga, para a cauda não análoga, a adequabilidade mediana encontrada no limite da calibração. Curva preta e preenchimento cinza Distribuição dos valores ambientais na base de calibração usada pelo diagnóstico. Curva e preenchimento roxos Distribuição dos valores ambientais na área de projeção, estimada com uma amostra de pixels. Sobreposição das curvas Indica distribuições ambientais semelhantes para aquela variável. Não comprova similaridade multivariada. Faixa laranja-clara Valores da projeção abaixo do mínimo observado na calibração. Faixa azul-clara Valores da projeção acima do máximo observado na calibração. Linhas verticais contínuas laranja e azul-clara Limites mínimo e máximo da calibração, respectivamente. Linhas verticais pontilhadas laranja-escura e azul-escura Limites mínimo e máximo encontrados na área de projeção. Pinilla-Buitrago  et al. (2026)"
+  },
+  {
+    "slide": 377,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 378,
+    "text": "Smith & Santos (2020)"
+  },
+  {
+    "slide": 379,
+    "text": "4. Avaliação do Modelo Métricas e sua interpretação Curvas de resposta ( PDPs ) Importância de Permutação das Variáveis Histogramas da Variáveis"
+  },
+  {
+    "slide": 380,
+    "text": "Intervalo para Almoço"
+  },
+  {
+    "slide": 381,
+    "text": "Capítulo 5 Projeção do Modelo"
+  },
+  {
+    "slide": 382,
+    "text": "Passos para Modelagem Zurell et. al (2020)"
+  },
+  {
+    "slide": 383,
+    "text": "5. Projeções para Outros Locais e Períodos Hipóteses e Decisões O modelo correlativo representa associações entre ocorrências e preditores A projeção aplica essa relação a outras condições no espaço ou no tempo A adequabilidade fundamenta uma hipótese sobre distribuição potencial baseada no nicho ecológico Ocupação, estabelecimento e impacto exigem evidências adicionais A escolha do limiar e o custo dos erros dependem da finalidade, inclusive dentro de conservação ou vigilância Moreno-Arzate & Martínez-Meyer (2024)"
+  },
+  {
+    "slide": 384,
+    "text": "5. Projeções para Outros Locais e Períodos Pressupostos a Discutir A amostra representa as condições relevantes para a pergunta? Há regiões ou ambientes pouco amostrados? A espécie ocupa as condições acessíveis e adequadas? Que evidências sugerem desequilíbrio? As relações com os preditores podem ser transferidas para o destino? Reunir ocorrências nativas e introduzidas pode ampliar a cobertura; avaliar origem, qualidade e registros sob cultivo. Explicitar hipóteses de conservação do nicho, acessibilidade e dispersão. Diagnosticar ambientes não análogos. Essl et al. (2024) ;  Anselmetto et al. (2025)"
+  },
+  {
+    "slide": 385,
+    "text": "5. Projeções para Outros Locais e Períodos Guisan et al. (2014) Cenários teóricos de mudanças de nicho realizadas no espaço (por exemplo, após invasões) ou no tempo (por exemplo, sob mudanças climáticas). Mudança de:  ( i ) o envelope de nicho (expansão ou contração) sem mudança do centroide de nicho, devido à mudança simétrica de nicho, isto é, em duas direções opostas (A) ou todas as direções no espaço climático; ( ii ) o centroide de nicho com expansão, contração ( B , C) ou deslocamento ( D ) de parte ou de todo o envelope de nicho; ou ( iii ) apenas o centroide de nicho, devido a uma mudança na densidade de ocorrências dentro do mesmo envelope de nicho no espaço climático (E)."
+  },
+  {
+    "slide": 386,
+    "text": "5. Projeções para Outros Locais e Períodos Guisan et al. (2014) Linhas finas contínuas mostram a densidade de ambientes disponíveis na faixa nativa (em verde) e na faixa invadida (em vermelho). A área cinza mostra os ambientes mais frequentes comuns a ambas as faixas (ou seja, ambientes análogos). As linhas grossas (verde e vermelha), mostram os nichos nativo e invadido, respectivamente. Condições disponíveis na faixa nativa, fora do nicho nativo e não análogas à faixa invadida.  Condições dentro do nicho nativo, mas não análogas à faixa invadida.  Unfilling, ou seja, condições dentro do nicho nativo, mas fora do nicho invadido, possivelmente devido à introdução recente combinada com a dispersão contínua das espécies exóticas, sem garantia de preenchimento futuro.  Estabilidade do nicho, ou seja, condições preenchidas tanto na área nativa quanto na invadida.  Expansão do nicho, ou seja, condições dentro do nicho invadido, mas fora do nativo, pode refletir mudanças, disponibilidade ambiental ou diferenças de amostragem.  Condições dentro do nicho invadido, mas não análogas à área nativa. Condições disponíveis na área invadida, mas fora do nicho invadido e não análogas à área nativa.  Condições análogas entre as áreas nativas e invadidas."
+  },
+  {
+    "slide": 387,
+    "text": "5. Projeções para Outros Locais e Períodos Fenollosa et al. (2025)"
+  },
+  {
+    "slide": 388,
+    "text": "5. Projeções para Outros Locais e Períodos Guisan et al. (2014) ,  Di Cola et ail. (2016) ,  Broenninmann  et al. (2021) Bactrocera   dorsalis Bactrocera  carambolae O azul indica nicho nativo não preenchido, o laranja mostra áreas de expansão de nicho na área invadida e o amarelo indica estabilidade do nicho. As linhas de contorno sólidas representam o espaço ambiental das áreas nativas (verde-claro) e invadidas (vermelho); as linhas pontilhadas representam 90% do ambiente de fundo disponível. As setas sólidas e pontilhadas indicam deslocamentos nos centroides ambientais entre nichos nativos e invadidos."
+  },
+  {
+    "slide": 389,
+    "text": "Ocorrências e dinâmica de invasão Para distribuição potencial, dados nativos e introduzidos podem complementar a representação ambiental. Manter a origem dos registros permite examinar estabilidade, expansão e subocupação. Diferenças no nicho observado não demonstram automaticamente evolução ou mudança fisiológica. Considerar disponibilidade ambiental, amostragem, introduções e tempo desde a colonização. Atualizar dados e recalibrar quando novas informações relevantes alterarem a cobertura. Broennimann & Guisan (2008) ;  Guisan et al. (2014) ;  Peterson et al. (2026)"
+  },
+  {
+    "slide": 390,
+    "text": "base (presente) SSP 2-4.5 2061-2080 Desvio Padrão ( entre  projeções  de GCMs ) base (presente) SSP 2-4.5 2061-2080 Mudança Binária"
+  },
+  {
+    "slide": 391,
+    "text": "5. Projeções para Outros Locais e Períodos PaleoENM Paleobiogeografia  /  Paleoecologia combina a paleontologia e a biogeografia para entender como os organismos fósseis se distribuíram no passado útil para entender distribuição espacial das espécies e suas alterações ao longo do tempo  fundamental para entender como as mudanças ambientais influenciam às mudanças da biodiversidade e seus padrões geográficos Blois et al. (2025) ,  Myers et al. (2015)   Como as espécies respondem às mudanças nas condições ambientais? Seus nichos abióticos são conservados?"
+  },
+  {
+    "slide": 392,
+    "text": "5. Projeções para Outros Locais e Períodos Extrapolação"
+  },
+  {
+    "slide": 393,
+    "text": ""
+  },
+  {
+    "slide": 394,
+    "text": "5. Projeções para Outros Locais e Períodos Comportamento fora do domínio de treinamento Truncamento ou máscara: restringir a interpretação ou a projeção ao domínio definido Clamping : limitar valores dos preditores usados na predição aos limites de treinamento, conforme implementação Extrapolação livre: aplicar a função ajustada a valores fora do intervalo conhecido Combinações novas podem surgir mesmo quando cada variável está dentro de seu intervalo Comparar cenários e mostrar onde a transferência depende de condições pouco representadas"
+  },
+  {
+    "slide": 395,
+    "text": ""
+  },
+  {
+    "slide": 396,
+    "text": "5. Projeções para Outros Locais e Períodos Diagnósticos de novidade ambiental MESS (Multivariate Environmental Similarity Surface):  compara cada variável à distribuição de referência e retém a menor similaridade; valores negativos indicam que pelo menos uma variável está fora dos limites observados, mas valores não negativos não excluem combinações ambientais novas MOP (Mobility-Oriented Parity):  mede a proximidade ambiental às condições de referência e identifica extrapolação estrita quando pelo menos uma variável ultrapassa os limites observados EXDET (E xtrapolation  Detection) :  distingue novidade univariada — valores fora dos limites de referência — e novidade de combinações entre variáveis, avaliada pela distância de Mahalanobis mesmo quando os valores individuais permanecem dentro desses limites Shape:  quantifica a novidade ambiental pela distância multivariada ao ponto de treinamento mais próximo, relativizada pela dispersão dos dados de treinamento; valores maiores indicam maior novidade, com limiar ajustável para classificar a extrapolação Elith et al. (2010) ;  Velazco et al. (2023)"
+  },
+  {
+    "slide": 397,
+    "text": ""
+  },
+  {
+    "slide": 398,
+    "text": "5. Projeções no Espaço e no Tempo Extrapolação Velazco et al. (2023) ,  Elith et al. (2011) ,  Elith et al. (2010)"
+  },
+  {
+    "slide": 399,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 400,
+    "text": ""
+  },
+  {
+    "slide": 401,
+    "text": "Bom dia!"
+  },
+  {
+    "slide": 402,
+    "text": ""
+  },
+  {
+    "slide": 403,
+    "text": "CMIP -  Coupled Model  Intercomparison Project  CMIP coordena experimentos entre grupos e modelos climáticos CMIP6 e  ScenarioMIP  fornecem projeções para combinações de trajetórias e forçamentos. O roteiro deve informar produto, versão,  GCMs , cenário, período e resolução utilizados WorldClim e CHELSA disponibilizam produtos derivados com coberturas e procedimentos próprios A disponibilidade do produto escolhido não representa todo o conjunto de experimentos do CMIP O’Neill et al. (2016) ;  Esser et al. (2025)"
+  },
+  {
+    "slide": 404,
+    "text": ""
+  },
+  {
+    "slide": 405,
+    "text": ""
+  },
+  {
+    "slide": 406,
+    "text": "5. Projeções no Espaço e no Tempo Polanski et al. (2025) ;  Bazzanela et al. (2024)"
+  },
+  {
+    "slide": 407,
+    "text": "Presente SSP2-4.5 2061-2080 SSP3-7.0 2061-2080 5. Projeções no Espaço e no Tempo"
+  },
+  {
+    "slide": 408,
+    "text": "dúvidas"
+  },
+  {
+    "slide": 409,
+    "text": ""
+  },
+  {
+    "slide": 410,
+    "text": "5. Projeção do Modelo Projeção do Modelo (clima presente) Curvas ROC Mapas Globais Mapa para o Brasil Extrapolação Avaliação de ajustes necessários Projeções CMIP6 (clima futuro)"
+  },
+  {
+    "slide": 411,
+    "text": "Capítulo 6 Ensemble  of   Small  Models"
+  },
+  {
+    "slide": 412,
+    "text": "Lomba et al. (2010) ,  Breiner  et al. ( 2015 ,  2018 )"
+  },
+  {
+    "slide": 413,
+    "text": "Lomba et al. (2010) ,  Breiner  et al. ( 2015 ,  2018 )"
+  },
+  {
+    "slide": 414,
+    "text": "Lomba et al. (2010) ,  Breiner  et al. ( 2015 ,  2018 ) 6. Ensemble  of   Small  Models Concordância das classificações binárias Adequabilidade mediana"
+  },
+  {
+    "slide": 415,
+    "text": "Lomba et al. (2010) ,  Breiner  et al. ( 2015 ,  2018 ) 6. Ensemble  of   Small  Models"
+  },
+  {
+    "slide": 416,
+    "text": "Lomba et al. (2010) ,  Breiner  et al. ( 2015 ,  2018 ),  Herrera et al. (2002)"
+  },
+  {
+    "slide": 417,
+    "text": "Intervalo para Almoço"
+  },
+  {
+    "slide": 418,
+    "text": "Comunicar Resultados"
+  },
+  {
+    "slide": 419,
+    "text": "Comunicar resultados: pergunta e evidências Journal of Maps Guide ,  Lovelace et. al (2019)  ;  Sofaer et al. (2019)"
+  },
+  {
+    "slide": 420,
+    "text": "mapas   são   o  casamento da  arte   com a  ciência"
+  },
+  {
+    "slide": 421,
+    "text": ""
+  },
+  {
+    "slide": 422,
+    "text": ""
+  },
+  {
+    "slide": 423,
+    "text": ""
+  },
+  {
+    "slide": 424,
+    "text": ""
+  },
+  {
+    "slide": 425,
+    "text": ""
+  },
+  {
+    "slide": 426,
+    "text": ""
+  },
+  {
+    "slide": 427,
+    "text": ""
+  },
+  {
+    "slide": 428,
+    "text": ""
+  },
+  {
+    "slide": 429,
+    "text": "Coro et al. (2024) ;  Passos et al. (2024)"
+  },
+  {
+    "slide": 430,
+    "text": "Ramirez-Ruiz & Senninger (2026)"
+  },
+  {
+    "slide": 431,
+    "text": "Ramirez-Ruiz & Senninger (2026)"
+  },
+  {
+    "slide": 432,
+    "text": ""
+  },
+  {
+    "slide": 433,
+    "text": "Cinco slides apresentar o estudo do grupo Conteúdo baseado na estrutura  IMReD 1. Pergunta, espécie e decisão que o modelo pode apoiar 2. Ocorrências, qualidade dos dados, preditores e área de calibração 3. Modelos selecionados, ensemble e avaliação 4. Adequabilidade ambiental, distribuição potencial e extrapolação 5. Conclusão, incertezas e limites de uso"
+  },
+  {
+    "slide": 434,
+    "text": "6. Comunicação dos Resultados Nota Técnica IMReD CRediT Apresentação 5 slides ( IMReD ) 10 minutos"
+  },
+  {
+    "slide": 435,
+    "text": "vamos conversar"
+  },
+  {
+    "slide": 436,
+    "text": "Livros sobre Modelagem"
+  },
+  {
+    "slide": 437,
+    "text": "Zurell  et al. (2023) Incertezas Metodológicas"
+  },
+  {
+    "slide": 438,
+    "text": "Soley-Guardia et al. (2024) Incertezas Metodológicas Preparação  dos Dados Perigo 1 :  Ignorar   erros   nos  dados de  ocorrência Perigo 2 :  Desconsiderar   vieses  de  amostragem Perigo 3 : Usar  variáveis   ambientais  com  inconsistências   espaciais   ou   temporais Ajuste do modelo Perigo 4:  Confiar em configurações  default Perigo 5:  Reduzir variáveis preditoras independentemente do seu conteúdo informativo Perigo 6:  Usar uma região de estudo excessivamente grande Avaliação  do  modelo Perigo 7 :  Interpretar   incorretamente   métricas  de  desempenho   Perigo 8: Usar  partições   incompatíveis  com o  objetivo  de  transferência Projeção  do  modelo Perigo 9 :  Não   compreender   ou   ignorar   os   efeitos  da  extrapolação Perigo 10 :  Comparar   saídas  de  modelos  entre  diferentes   espécies   ou   locais"
+  },
+  {
+    "slide": 439,
+    "text": "Melhores Práticas"
+  },
+  {
+    "slide": 440,
+    "text": "Melhores Práticas"
+  },
+  {
+    "slide": 441,
+    "text": "50 Anos!! ECOMOD 50th  Anniversary   Edition"
+  },
+  {
+    "slide": 442,
+    "text": "A pergunta orienta a interpretação O objetivo orienta espécie, dados, escala, calibração, algoritmos e avaliação. Métricas altas não substituem coerência ecológica nem validação da transferência. A adequabilidade ambiental sustenta hipóteses sobre distribuição potencial. Superestimativa e subestimativa devem ser discutidas em relação aos dados e à decisão. Os grupos devem apresentar suas evidências, escolhas e limites de uso dos resultados."
+  },
+  {
+    "slide": 443,
+    "text": ""
+  },
+  {
+    "slide": 444,
+    "text": ""
+  },
+  {
+    "slide": 445,
+    "text": "Diamantina (MG), 23/10/2025 (18,20232º  S ; 43,57601º W)"
+  },
+  {
+    "slide": 446,
+    "text": "Modelagem   Avançada de  Distribuição  de  Espécies   e Nicho  Ecológico   com R George Amaro Pesquisador de Modelagem Agroambiental e Economia george.amaro@embrapa.br @ geamaro @ geamaro Licença:"
+  }
+]
