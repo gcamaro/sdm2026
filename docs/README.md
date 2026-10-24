@@ -40,3 +40,6 @@ Todos os links de consulta abrem versões HTML: o roteiro em Markdown é apresen
 
 ## Autoria, licença e consultas
 George Amaro — george.amaro@embrapa.br. A versão online deste livro será sempre gratuita e distribuída sob a licença CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/. A declaração encontra-se no item 18. O glossário foi organizado em ordem alfabética e o item 19 reúne as referências identificadas nos slides. Os arquivos originais de código são preservados.
+
+## Atualização da licença e das referências
+O item 18 apresenta somente a licença do livro. Para regenerar a lista de referências a partir dos metadados locais, execute `python3 tools/references.py` e depois `python3 tools/build.py`. A seção “Outras obras e materiais citados” foi retirada da lista.

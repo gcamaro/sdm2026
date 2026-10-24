@@ -1,28 +1,5 @@
 [
   {
-    "url": "https://www.academia.edu/106529893/Krebs_Charles_J_Ecology_the_experimental_analysis_of_distribution_and_abundance_Pearson_Education_Limited",
-    "labels": [
-      "Krebs (1972)"
-    ],
-    "slides": [
-      32,
-      33
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
-    "url": "https://scholar.google.com/scholar_lookup?title=Empirical%20Model%20Building%20and%20Response%20Surfaces&author=G.E.P.%20Box&publication_year=1987",
-    "labels": [
-      "Box & Draper (1987)"
-    ],
-    "slides": [
-      35
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
     "url": "https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r",
     "labels": [
       "Guisan et. al (2017)",
@@ -322,17 +299,6 @@
     "reference_id": "ref-447cdab126"
   },
   {
-    "url": "https://mauriciovancine.github.io/slides/slides-sdm-ufpe/slides.html?print-pdf=#/",
-    "labels": [
-      "Vancine (2022)"
-    ],
-    "slides": [
-      42
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
     "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.12033",
     "labels": [
       "McInerny & Etienne (2012)"
@@ -594,19 +560,6 @@
     "reference_id": "ref-2ee3362446"
   },
   {
-    "url": "http://www.biodiversitylibrary.org/bibliography/7435",
-    "labels": [
-      "Elton(1927)",
-      "Elton (1927)"
-    ],
-    "slides": [
-      52,
-      63
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
     "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/282505",
     "labels": [
       "Macarthur & Levins (1967)"
@@ -750,17 +703,6 @@
     "metadata_source": "Zotero",
     "match_method": "identifier",
     "reference_id": "ref-135c5d5140"
-  },
-  {
-    "url": "https://people.clas.ufl.edu/rdholt/files/230.pdf",
-    "labels": [
-      "Holt (2009)"
-    ],
-    "slides": [
-      57
-    ],
-    "doi": "",
-    "data": null
   },
   {
     "url": "https://doi.org/10.1002/ecog.07774",
@@ -950,17 +892,6 @@
     "metadata_source": "Crossref",
     "match_method": "doi",
     "reference_id": "ref-00ff681078"
-  },
-  {
-    "url": "https://www.cambridge.org/core/journals/paleobiology/article/abs/responses-of-plant-populations-and-communities-to-environmental-changes-of-the-late-quaternary/A9092DD059CCEB530D52A862B5FF9B9B",
-    "labels": [
-      "Jackson & Overpeck (2019)"
-    ],
-    "slides": [
-      68
-    ],
-    "doi": "",
-    "data": null
   },
   {
     "url": "http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106",
@@ -1162,28 +1093,6 @@
     "reference_id": "ref-1972dfc8a3"
   },
   {
-    "url": "https://pubs.usgs.gov/publication/37528",
-    "labels": [
-      "Bump & Bohl (1961)"
-    ],
-    "slides": [
-      80
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
-    "url": "https://www.cambridge.org/core/books/habitat-suitability-and-distribution-models/A17F74A3418DBF9ADA191A04C35187F9",
-    "labels": [
-      "Thuiller & Zimmermann (2017)"
-    ],
-    "slides": [
-      82
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
     "url": "https://www.mdpi.com/2673-4834/6/1/12",
     "labels": [
       "Booth (2025)"
@@ -1217,39 +1126,6 @@
     "metadata_source": "Zotero",
     "match_method": "identifier",
     "reference_id": "ref-f0006c0923"
-  },
-  {
-    "url": "https://csiropedia.csiro.au/bioclim/",
-    "labels": [
-      "Booth, 2018"
-    ],
-    "slides": [
-      83
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
-    "url": "https://www.sciencedirect.com/book/9780080289144/areography?via=ihub=",
-    "labels": [
-      "Rapoport (1982)"
-    ],
-    "slides": [
-      84
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
-    "url": "https://press.uchicago.edu/ucp/books/book/chicago/F/bo3613618.html",
-    "labels": [
-      "Real & Levin (1991)"
-    ],
-    "slides": [
-      84
-    ],
-    "doi": "",
-    "data": null
   },
   {
     "url": "https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960",
@@ -1731,17 +1607,6 @@
     "data": null
   },
   {
-    "url": "https://moderndive.com/index.html",
-    "labels": [
-      "Ismay & Kim (2022)"
-    ],
-    "slides": [
-      110
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
     "url": "https://medium.com/@adrian.joseph/improve-your-r-workflow-with-these-must-have-r-packages-be47dacd89bc",
     "labels": [
       "R Must Have Packages"
@@ -1858,18 +1723,6 @@
     ],
     "slides": [
       127
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
-    "url": "https://www.sciencedirect.com/science/article/pii/S167900731630130X",
-    "labels": [
-      "Pena et al. (2017)"
-    ],
-    "slides": [
-      130,
-      131
     ],
     "doi": "",
     "data": null
@@ -2252,7 +2105,11 @@
     },
     "metadata_source": "Zotero",
     "match_method": "identifier",
-    "reference_id": "ref-998127eabc"
+    "reference_id": "ref-998127eabc",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "T4LELKA9"
+    ]
   },
   {
     "url": "https://doi.org/10.1111/ecog.07294",
@@ -3268,17 +3125,6 @@
     "metadata_source": "Zotero",
     "match_method": "identifier",
     "reference_id": "ref-206776b4a1"
-  },
-  {
-    "url": "https://www.biodiversitylibrary.org/bibliography/4489",
-    "labels": [
-      "Gauze (1934)"
-    ],
-    "slides": [
-      169
-    ],
-    "doi": "",
-    "data": null
   },
   {
     "url": "https://ecoevorxiv.org/repository/view/8446/",
@@ -4507,17 +4353,6 @@
     "metadata_source": "Zotero",
     "match_method": "identifier",
     "reference_id": "ref-6515169473"
-  },
-  {
-    "url": "https://data-blog.gbif.org/post/catalogue-of-life-taxonomic-backbone/",
-    "labels": [
-      "GBIF (2026)"
-    ],
-    "slides": [
-      199
-    ],
-    "doi": "",
-    "data": null
   },
   {
     "url": "https://www.catalogueoflife.org/building/releases",
@@ -6483,17 +6318,6 @@
     "reference_id": "ref-607a0e4c5f"
   },
   {
-    "url": "https://datasources.speciesmonitoring.org/",
-    "labels": [
-      "IUCN SSC Species Monitoring Specialist Group (2025)"
-    ],
-    "slides": [
-      245
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
     "url": "https://drive.google.com/file/d/17n92RFr0EjMOKwj6XK5OvgnB4Fw1EZnP/view",
     "labels": [
       "Bases de Dados e Fontes de Informações"
@@ -6593,17 +6417,6 @@
     "metadata_source": "Crossref",
     "match_method": "doi",
     "reference_id": "ref-ed70de4d90"
-  },
-  {
-    "url": "https://www.whoi.edu/cms/files/carpenter_etal_2003_53463.pdf",
-    "labels": [
-      "Carpenter et al. (1993)"
-    ],
-    "slides": [
-      280
-    ],
-    "doi": "",
-    "data": null
   },
   {
     "url": "https://doi.org/10.1111/j.1472-4642.2010.00725.x",
@@ -6941,17 +6754,6 @@
     "metadata_source": "Zotero",
     "match_method": "identifier",
     "reference_id": "ref-d60f4b8735"
-  },
-  {
-    "url": "https://webhomes.maths.ed.ac.uk/~swood34/igam/",
-    "labels": [
-      "Wood (2017)"
-    ],
-    "slides": [
-      296
-    ],
-    "doi": "",
-    "data": null
   },
   {
     "url": "https://www.sciencedirect.com/science/article/pii/S016953470600303X",
@@ -7367,17 +7169,6 @@
     "metadata_source": "Zotero",
     "match_method": "identifier",
     "reference_id": "ref-a2d1ce9aad"
-  },
-  {
-    "url": "https://luizfesser.wordpress.com/2021/06/08/are-pseudoabsences-and-background-the-same-thing/",
-    "labels": [
-      "Esser (2021)"
-    ],
-    "slides": [
-      309
-    ],
-    "doi": "",
-    "data": null
   },
   {
     "url": "https://doi.org/10.1016/j.ecolmodel.2024.110754",
@@ -8153,7 +7944,11 @@
     },
     "metadata_source": "Zotero",
     "match_method": "identifier",
-    "reference_id": "ref-5836e125ed"
+    "reference_id": "ref-5836e125ed",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "7GIHFYDI"
+    ]
   },
   {
     "url": "https://doi.org/10.1007/s10531-024-02953-3",
@@ -10999,17 +10794,6 @@
     "data": null
   },
   {
-    "url": "https://geocompr.robinlovelace.net/index.html",
-    "labels": [
-      "Lovelace et. al (2019)"
-    ],
-    "slides": [
-      419
-    ],
-    "doi": "",
-    "data": null
-  },
-  {
     "url": "https://doi.org/10.1093/biosci/biz045",
     "labels": [
       "Sofaer et al. (2019)"
@@ -11283,5 +11067,758 @@
     ],
     "doi": "",
     "data": null
+  },
+  {
+    "url": "https://doi.org/10.1002/fes3.70120",
+    "labels": [
+      "Global Climate Suitability and Economic Risks of the Fall Armyworm Spodoptera frugiperda to Key Crops in Brazil"
+    ],
+    "slides": [],
+    "doi": "10.1002/fes3.70120",
+    "data": {
+      "key": "S95ZLB38",
+      "itemType": "journalArticle",
+      "title": "Global Climate Suitability and Economic Risks of the Fall Armyworm Spodoptera frugiperda to Key Crops in Brazil",
+      "creators": [
+        {
+          "firstName": "George Correa",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Owusu Fordjour",
+          "lastName": "Aidoo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Philipe Guilherme Corcino",
+          "lastName": "Souza",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eunice Stella",
+          "lastName": "Nyarko",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kwame",
+          "lastName": "Adjei-Mantey",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lakpo Koku",
+          "lastName": "Agboyi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Roger Sigismund",
+          "lastName": "Anderson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Frederick Leo",
+          "lastName": "Sossah",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marcelo Coutinho",
+          "lastName": "Picanço",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ricardo Siqueira",
+          "lastName": "da Silva",
+          "creatorType": "author"
+        }
+      ],
+      "date": "10 September 2025",
+      "publicationTitle": "Food and Energy Security",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "14",
+      "issue": "5",
+      "pages": "e70120",
+      "DOI": "10.1002/fes3.70120",
+      "url": "https://doi.org/10.1002/fes3.70120"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "S95ZLB38"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.1080/07060661.2025.2533964",
+    "labels": [
+      "Assessing the impact of climate changes on the distribution of two corn diseases: corn stunt and corn reddening"
+    ],
+    "slides": [],
+    "doi": "10.1080/07060661.2025.2533964",
+    "data": {
+      "key": "TA5XWL25",
+      "itemType": "journalArticle",
+      "title": "Assessing the impact of climate changes on the distribution of two corn diseases: corn stunt and corn reddening",
+      "creators": [
+        {
+          "firstName": "José Carlos Barbosa",
+          "lastName": "Dos Santos",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rodrigo Soares",
+          "lastName": "Ramos",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daiane",
+          "lastName": "Das Graças Do Carmo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marcelo Coutinho",
+          "lastName": "Picanco",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eliseu Pereira",
+          "lastName": "Guedes",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Paulo Antônio Santana",
+          "lastName": "Junior",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Renato Almeida",
+          "lastName": "Sarmento",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Natália",
+          "lastName": "De Souza Ribas",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "George",
+          "lastName": "Correa Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ricardo Siqueira",
+          "lastName": "Da Silva",
+          "creatorType": "author"
+        }
+      ],
+      "date": "2025-11-02",
+      "publicationTitle": "Canadian Journal of Plant Pathology",
+      "bookTitle": "",
+      "publisher": "Taylor & Francis",
+      "place": "",
+      "volume": "47",
+      "issue": "6",
+      "pages": "608-627",
+      "DOI": "10.1080/07060661.2025.2533964",
+      "url": "https://doi.org/10.1080/07060661.2025.2533964"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "TA5XWL25",
+      "ETK9KN9Y"
+    ]
+  },
+  {
+    "url": "https://resjournals.onlinelibrary.wiley.com/doi/10.1111/afe.70076",
+    "labels": [
+      "Predicting global habitat suitability and invasion risks of the red gum lerp psyllid Glycaspis brimblecombei under current and future climates"
+    ],
+    "slides": [],
+    "doi": "10.1111/afe.70076",
+    "data": {
+      "key": "Y6HRIU2D",
+      "itemType": "journalArticle",
+      "title": "Predicting global habitat suitability and invasion risks of the red gum lerp psyllid <i>Glycaspis brimblecombei</i> under current and future climates",
+      "creators": [
+        {
+          "firstName": "Fernanda",
+          "lastName": "De Aguiar Coelho",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "George Corrêa",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Adriene Caldeira",
+          "lastName": "Batista",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Edmond Joseph Djibril Victor",
+          "lastName": "Barry",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Muhammad",
+          "lastName": "Haseeb",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marcus Alvarenga",
+          "lastName": "Soares",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Owusu Fordjour",
+          "lastName": "Aidoo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sebastião Lourenço",
+          "lastName": "De Assis Júnior",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ricardo Siqueira",
+          "lastName": "Da Silva",
+          "creatorType": "author"
+        }
+      ],
+      "date": "2026-08-13",
+      "publicationTitle": "Agricultural and Forest Entomology",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "",
+      "issue": "",
+      "pages": "afe.70076",
+      "DOI": "10.1111/afe.70076",
+      "url": "https://resjournals.onlinelibrary.wiley.com/doi/10.1111/afe.70076"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "Y6HRIU2D"
+    ]
+  },
+  {
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/aab.70088",
+    "labels": [
+      "Assessing invasion risks and potential impacts of greater banded hornet across the United States"
+    ],
+    "slides": [],
+    "doi": "10.1111/aab.70088",
+    "data": {
+      "key": "WB3MCJJZ",
+      "itemType": "journalArticle",
+      "title": "Assessing invasion risks and potential impacts of greater banded hornet across the United States",
+      "creators": [
+        {
+          "firstName": "Owusu Fordjour",
+          "lastName": "Aidoo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gengping",
+          "lastName": "Zhu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Liesl",
+          "lastName": "Oeller",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "George Corrêa",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David William",
+          "lastName": "Crowder",
+          "creatorType": "author"
+        }
+      ],
+      "date": "2026",
+      "publicationTitle": "Annals of Applied Biology",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "188",
+      "issue": "3",
+      "pages": "866-874",
+      "DOI": "10.1111/aab.70088",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/aab.70088"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "WB3MCJJZ"
+    ]
+  },
+  {
+    "url": "https://scijournals.onlinelibrary.wiley.com/doi/10.1002/ps.70152",
+    "labels": [
+      "Climatically suitable areas for  Hylobius abietis  and  Hylobius pales  : a global and regional analysis considering economic risks for pine production"
+    ],
+    "slides": [],
+    "doi": "10.1002/ps.70152",
+    "data": {
+      "key": "PUE5UXKN",
+      "itemType": "journalArticle",
+      "title": "Climatically suitable areas for <span style=\"font-variant:small-caps;\"> <i>Hylobius abietis</i> </span> and <span style=\"font-variant:small-caps;\"> <i>Hylobius pales</i> </span> : a global and regional analysis considering economic risks for pine production",
+      "creators": [
+        {
+          "firstName": "Jéssica",
+          "lastName": "Simão",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gabriel Dorotel Da Silva",
+          "lastName": "Ferreira",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Leonardo Rodrigues",
+          "lastName": "Barbosa",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fabiane Dos",
+          "lastName": "Santos",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "George Correa",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Cesar Augusto",
+          "lastName": "Marchioro",
+          "creatorType": "author"
+        }
+      ],
+      "date": "12/2025",
+      "publicationTitle": "Pest Management Science",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "81",
+      "issue": "12",
+      "pages": "8477-8486",
+      "DOI": "10.1002/ps.70152",
+      "url": "https://scijournals.onlinelibrary.wiley.com/doi/10.1002/ps.70152"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "PUE5UXKN"
+    ]
+  },
+  {
+    "url": "https://resjournals.onlinelibrary.wiley.com/doi/10.1111/afe.70012",
+    "labels": [
+      "Current and future global distribution of the peach twig borer, Anarsia lineatella Zeller (Lepidoptera: Gelechiidae)"
+    ],
+    "slides": [],
+    "doi": "10.1111/afe.70012",
+    "data": {
+      "key": "BX7YHJCB",
+      "itemType": "journalArticle",
+      "title": "Current and future global distribution of the peach twig borer, <i>Anarsia lineatella</i> Zeller (Lepidoptera: Gelechiidae)",
+      "creators": [
+        {
+          "firstName": "George",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Cesar Augusto",
+          "lastName": "Marchioro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ricardo Siqueira",
+          "lastName": "Da Silva",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Elisangela Gomes",
+          "lastName": "Fidelis",
+          "creatorType": "author"
+        }
+      ],
+      "date": "2025-09-19",
+      "publicationTitle": "Agricultural and Forest Entomology",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "",
+      "issue": "",
+      "pages": "afe.70012",
+      "DOI": "10.1111/afe.70012",
+      "url": "https://resjournals.onlinelibrary.wiley.com/doi/10.1111/afe.70012"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "BX7YHJCB"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.1007/s10493-012-9651-9",
+    "labels": [
+      "Potential geographical distribution of the red palm mite in South America"
+    ],
+    "slides": [],
+    "doi": "10.1007/s10493-012-9651-9",
+    "data": {
+      "key": "9RHH3TGN",
+      "itemType": "journalArticle",
+      "title": "Potential geographical distribution of the red palm mite in South America",
+      "creators": [
+        {
+          "firstName": "George",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Elisangela Gomes Fidelis",
+          "lastName": "de Morais",
+          "creatorType": "author"
+        }
+      ],
+      "date": "July 2013",
+      "publicationTitle": "Experimental and Applied Acarology",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "60",
+      "issue": "3",
+      "pages": "343–355",
+      "DOI": "10.1007/s10493-012-9651-9",
+      "url": "https://doi.org/10.1007/s10493-012-9651-9"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "9RHH3TGN"
+    ]
+  },
+  {
+    "url": "",
+    "labels": [
+      "Risco Econômico Potencial do Ácaro-vermelho-das- -palmeiras (Raoiella indica, Hirst) para a produção de bananas e coco no Brasil"
+    ],
+    "slides": [],
+    "doi": "",
+    "data": {
+      "key": "44R6NXQU",
+      "itemType": "journalArticle",
+      "title": "Risco Econômico Potencial do Ácaro-vermelho-das- -palmeiras (Raoiella indica, Hirst) para a produção de bananas e coco no Brasil",
+      "creators": [
+        {
+          "firstName": "George Correa",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Elisangela Gomes",
+          "lastName": "Fidelis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Cristian Madeira",
+          "lastName": "de Medeiros",
+          "creatorType": "author"
+        }
+      ],
+      "date": "",
+      "publicationTitle": "",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "DOI": "",
+      "url": ""
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "44R6NXQU"
+    ]
+  },
+  {
+    "url": "https://www.cambridge.org/core/product/identifier/S0007485324000105/type/journal_article",
+    "labels": [
+      "Risk of spread of the Asian citrus psyllid Diaphorina citri Kuwayama (Hemiptera: Liviidae) in Ghana"
+    ],
+    "slides": [],
+    "doi": "10.1017/S0007485324000105",
+    "data": {
+      "key": "PD9NTWDH",
+      "itemType": "journalArticle",
+      "title": "Risk of spread of the Asian citrus psyllid <i>Diaphorina citri</i> Kuwayama (Hemiptera: Liviidae) in Ghana",
+      "creators": [
+        {
+          "firstName": "Kodwo Dadzie",
+          "lastName": "Ninsin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Philipe Guilherme Corcino",
+          "lastName": "Souza",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "George Correa",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Owusu Fordjour",
+          "lastName": "Aidoo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Edmond Joseph Djibril Victor",
+          "lastName": "Barry",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ricardo Siqueira",
+          "lastName": "Da Silva",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jonathan",
+          "lastName": "Osei-Owusu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Aboagye Kwarteng",
+          "lastName": "Dofuor",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fred Kormla",
+          "lastName": "Ablormeti",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "William K.",
+          "lastName": "Heve",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "George",
+          "lastName": "Edusei",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lakpo Koku",
+          "lastName": "Agboyi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Patrick",
+          "lastName": "Beseh",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hettie Arwoh",
+          "lastName": "Boafo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christian",
+          "lastName": "Borgemeister",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mamoudou",
+          "lastName": "Sétamou",
+          "creatorType": "author"
+        }
+      ],
+      "date": "06/2024",
+      "publicationTitle": "Bulletin of Entomological Research",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "114",
+      "issue": "3",
+      "pages": "327-346",
+      "DOI": "10.1017/S0007485324000105",
+      "url": "https://www.cambridge.org/core/product/identifier/S0007485324000105/type/journal_article"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "PD9NTWDH"
+    ]
+  },
+  {
+    "url": "https://link.springer.com/10.1007/s10493-022-00760-5",
+    "labels": [
+      "Risk analysis of the spread of the quarantine pest mite Schizotetranychus hindustanicus in Brazil"
+    ],
+    "slides": [],
+    "doi": "10.1007/s10493-022-00760-5",
+    "data": {
+      "key": "Q7B4GQJ7",
+      "itemType": "journalArticle",
+      "title": "Risk analysis of the spread of the quarantine pest mite Schizotetranychus hindustanicus in Brazil",
+      "creators": [
+        {
+          "firstName": "George",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Elisangela Gomes",
+          "lastName": "Fidelis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Cristian Madeira",
+          "lastName": "De Medeiros",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ricardo Siqueira",
+          "lastName": "Da Silva",
+          "creatorType": "author"
+        }
+      ],
+      "date": "12/2022",
+      "publicationTitle": "Experimental and Applied Acarology",
+      "bookTitle": "",
+      "publisher": "Springer Science and Business Media LLC",
+      "place": "",
+      "volume": "88",
+      "issue": "3-4",
+      "pages": "263-275",
+      "DOI": "10.1007/s10493-022-00760-5",
+      "url": "https://link.springer.com/10.1007/s10493-022-00760-5"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "Q7B4GQJ7"
+    ]
+  },
+  {
+    "url": "",
+    "labels": [
+      "Risco Econômico Potencial do Ácaro-hindustânico-dos- citros (Schizotetranychus hindustanicus Hirst) para a produção de citros no Brasil"
+    ],
+    "slides": [],
+    "doi": "",
+    "data": {
+      "key": "5FH3KA7L",
+      "itemType": "journalArticle",
+      "title": "Risco Econômico Potencial do Ácaro-hindustânico-dos- citros (Schizotetranychus hindustanicus Hirst) para a produção de citros no Brasil",
+      "creators": [
+        {
+          "firstName": "George Correa",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Elisangela Gomes",
+          "lastName": "Fidelis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Cristian Madeira",
+          "lastName": "de Medeiros",
+          "creatorType": "author"
+        }
+      ],
+      "date": "",
+      "publicationTitle": "",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "DOI": "",
+      "url": ""
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "5FH3KA7L"
+    ]
+  },
+  {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S1574954121001874",
+    "labels": [
+      "Current and potential geographic distribution of red palm mite (Raoiella indica Hirst) in Brazil"
+    ],
+    "slides": [],
+    "doi": "10.1016/j.ecoinf.2021.101396",
+    "data": {
+      "key": "IKF9Q52M",
+      "itemType": "journalArticle",
+      "title": "Current and potential geographic distribution of red palm mite (Raoiella indica Hirst) in Brazil",
+      "creators": [
+        {
+          "firstName": "George",
+          "lastName": "Amaro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Elisangela Gomes",
+          "lastName": "Fidelis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ricardo Siqueira",
+          "lastName": "da Silva",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Cristian Madeira",
+          "lastName": "de Medeiros",
+          "creatorType": "author"
+        }
+      ],
+      "date": "11/2021",
+      "publicationTitle": "Ecological Informatics",
+      "bookTitle": "",
+      "publisher": "",
+      "place": "",
+      "volume": "65",
+      "issue": "",
+      "pages": "101396",
+      "DOI": "10.1016/j.ecoinf.2021.101396",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S1574954121001874"
+    },
+    "metadata_source": "Zotero",
+    "match_method": "author-field",
+    "added_by_authorship": true,
+    "zotero_keys": [
+      "IKF9Q52M"
+    ]
   }
 ]
