@@ -12,7 +12,18 @@ Curso SDM 2026 — repositório de apresentação do curso e organização das a
 | Datas | 11 a 14 e 16 a 20 de novembro de 2026 |
 | Carga horária | 60 horas de atividades teóricas e práticas |
 
-A distribuição da carga horária entre os dias e os horários diários está pendente de confirmação.
+## Dias, horários e locais
+
+| Datas | Horários | Local |
+| --- | --- | --- |
+| 11 a 13/11 | 8h às 11h45 / 13h — 🤯 | [Campus JK](https://maps.app.goo.gl/EWbzJ4mAc4gNR16s9) |
+| 14/11 (sábado) | 8h às 11h45 / 13h — 🤯 | [Campus I](https://maps.app.goo.gl/Vcs5f2wgy3RiBHzR7) |
+| 16 a 19/11 | 8h às 11h45 / 13h — 🤯 | [Campus JK](https://maps.app.goo.gl/EWbzJ4mAc4gNR16s9) |
+| 20/11 (sexta-feira) | 8h às 11h45 | [Campus I](https://maps.app.goo.gl/Vcs5f2wgy3RiBHzR7) |
+
+**[Campus JK](https://www.google.com.br/maps/place//@-18.2001111,-43.5772543,1410m/data=!3m1!1e3?entry=tts&g_ep=EgoyMDI1MDQzMC4xIPu8ASoASAFQAw%3D%3D&skid=dac27b24-30f5-4d54-b636-87bcf9e30db2):** Rodovia MGT 367, km 583, nº 5.000, Alto da Jacuba, Diamantina (MG).
+
+**[Campus I](https://maps.app.goo.gl/Vcs5f2wgy3RiBHzR7):** Rua da Glória, nº 187, Centro, Diamantina (MG).
 
 ## Sobre o curso
 
