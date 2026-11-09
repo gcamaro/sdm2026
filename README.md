@@ -16,7 +16,8 @@ Curso SDM 2026 — repositório de apresentação do curso e organização das a
 
 | Datas | Horários | Local |
 | --- | --- | --- |
-| 11 a 13/11 | 8h às 11h45 / 13h — 🤯 | Campus JK |
+| 11/11 | 13h — 🤯 | Campus JK |
+| 12 a 13/11 | 8h às 11h45 / 13h — 🤯 | Campus JK |
 | 14/11 (sábado) | 8h às 11h45 / 13h — 🤯 | Campus I |
 | 16 a 19/11 | 8h às 11h45 / 13h — 🤯 | Campus JK |
 | 20/11 (sexta-feira) | 8h às 11h45 | Campus I |
