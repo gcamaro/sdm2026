@@ -176,7 +176,7 @@ Consulte o GitHub do curso para acompanhar as informações e os materiais dispo
 
 [GitHub — gcamaro/sdm2026](https://github.com/gcamaro/sdm2026)
 
-[OneDrive — pasta com Modelagem.zip](https://1drv.ms/f/c/74559871d74a2001/IgAmmEN_q6H9Rrjbh0edm5OfAdtIXQFh0vaSXA6laG0TJSI?e=qasdnO)
+[OneDrive — pasta com Modelagem.zip](https://1drv.ms/f/c/74559871d74a2001/IgAA5WIffjeHQqD1GlSLxOXHAWty7EeV9jeiwr8S3BRc13E?e=E1w1cn)
 
 1. Baixe Modelagem.zip e descompacte o arquivo em uma pasta local do computador. Aguarde a conclusão da extração; não trabalhe dentro do ZIP.
 
