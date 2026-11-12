@@ -17,10 +17,10 @@ Curso SDM 2026 — repositório de apresentação do curso e organização das a
 | Datas | Horários | Local |
 | --- | --- | --- |
 | 11/11 | 13h — 🤯 | Campus JK |
-| 12 a 13/11 | 8h às 11h45 / 13h — 🤯 | Campus JK |
+| 12 a 13/11 | 8h às 11h15 / 13h — 🤯 | Campus JK |
 | 14/11 (sábado) | 8h às 11h45 / 13h — 🤯 | Campus I |
-| 16 a 19/11 | 8h às 11h45 / 13h — 🤯 | Campus JK |
-| 20/11 (sexta-feira) | 8h às 11h45 | Campus I |
+| 16 a 19/11 | 8h às 11h15 / 13h — 🤯 | Campus JK |
+| 20/11 (sexta-feira) | 8h às 12h | Campus I |
 
 **[Campus JK](https://www.google.com.br/maps/place//@-18.2001111,-43.5772543,1410m/data=!3m1!1e3?entry=tts&g_ep=EgoyMDI1MDQzMC4xIPu8ASoASAFQAw%3D%3D&skid=dac27b24-30f5-4d54-b636-87bcf9e30db2):** Rodovia MGT 367, km 583, nº 5.000, Alto da Jacuba, Diamantina (MG).
 
