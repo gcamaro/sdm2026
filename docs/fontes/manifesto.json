@@ -1,0 +1,18 @@
+{
+  "prepared": "2026-11-13",
+  "slide_count": 501,
+  "scope": "Simulação do uso do script de Zaprionus, desde o planejamento de campo até a comunicação dos resultados.",
+  "sources": [
+    {
+      "name": "Curso SDM 2026 - 2026-11-06.pptx",
+      "sha256": "31457d4c7baa1cec518b29723bd8fb0f80e606254e8674996beb776489628127",
+      "bytes": 1713713562
+    },
+    {
+      "name": "Zaprionus tuberculatus SDM e Futuro 2026-10-12.R",
+      "sha256": "555004fe17c8310f2126deb53c46a0521d1ae51b9b2c7bb653be8b5fca80f408",
+      "bytes": 203334
+    }
+  ],
+  "method": "Síntese dos slides de 6 de novembro de 2026; trechos curtos do script indicado e conferências adicionais identificadas; sem executar uma nova modelagem ecológica."
+}

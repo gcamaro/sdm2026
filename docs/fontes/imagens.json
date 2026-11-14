@@ -1,0 +1,104 @@
+[
+  {
+    "asset": "assets/equipe-zaprionus.png",
+    "source": "Curso SDM 2026 - 2026-11-06.pptx",
+    "pptx_member": "ppt/media/image40.png",
+    "slides": [
+      26
+    ],
+    "transformation": "adaptação ilustrativa para Zaprionus tuberculatus com ferramenta de edição de imagens; originais preservados",
+    "match": "derivada da ilustração original",
+    "original_asset": "assets/equipe.png",
+    "adapted_on": "2026-11-14"
+  },
+  {
+    "asset": "assets/historia-pergunta-zaprionus.png",
+    "source": "Curso SDM 2026 - 2026-11-06.pptx",
+    "pptx_member": "ppt/media/image204.png",
+    "slides": [
+      156
+    ],
+    "transformation": "adaptação ilustrativa para Zaprionus tuberculatus com ferramenta de edição de imagens; originais preservados",
+    "match": "derivada da ilustração original",
+    "original_asset": "assets/historia-pergunta.png",
+    "adapted_on": "2026-11-14"
+  },
+  {
+    "asset": "assets/historia-dados-zaprionus.png",
+    "source": "Curso SDM 2026 - 2026-11-06.pptx",
+    "pptx_member": "ppt/media/image322.png",
+    "slides": [
+      280
+    ],
+    "transformation": "adaptação ilustrativa para Zaprionus tuberculatus com ferramenta de edição de imagens; originais preservados",
+    "match": "derivada da ilustração original",
+    "original_asset": "assets/historia-dados.png",
+    "adapted_on": "2026-11-14"
+  },
+  {
+    "asset": "assets/historia-avaliacao-zaprionus.png",
+    "source": "Curso SDM 2026 - 2026-11-06.pptx",
+    "pptx_member": "ppt/media/image477.png",
+    "slides": [
+      426
+    ],
+    "transformation": "adaptação ilustrativa para Zaprionus tuberculatus com ferramenta de edição de imagens; originais preservados",
+    "match": "derivada da ilustração original",
+    "original_asset": "assets/historia-avaliacao.png",
+    "adapted_on": "2026-11-14"
+  },
+  {
+    "asset": "assets/historia-projecao-zaprionus.png",
+    "source": "Curso SDM 2026 - 2026-11-06.pptx",
+    "pptx_member": "ppt/media/image510.png",
+    "slides": [
+      457
+    ],
+    "transformation": "adaptação ilustrativa para Zaprionus tuberculatus com ferramenta de edição de imagens; originais preservados",
+    "match": "derivada da ilustração original",
+    "original_asset": "assets/historia-projecao.png",
+    "adapted_on": "2026-11-14"
+  },
+  {
+    "asset": "assets/historia-artigo-zaprionus.png",
+    "source": "Curso SDM 2026 - 2026-11-06.pptx",
+    "pptx_member": "ppt/media/image167.png",
+    "slides": [
+      135
+    ],
+    "transformation": "adaptação ilustrativa para Zaprionus tuberculatus com ferramenta de edição de imagens; originais preservados",
+    "match": "derivada da ilustração original",
+    "original_asset": "assets/historia-artigo.png",
+    "adapted_on": "2026-11-14"
+  },
+  {
+    "asset": "assets/curvas-resposta.png",
+    "source": "Curso SDM 2026 - 2026-11-06.pptx",
+    "pptx_member": "ppt/media/image474.png",
+    "slides": [
+      423
+    ],
+    "transformation": "cópia integral",
+    "match": "exact image bytes or pixels"
+  },
+  {
+    "asset": "assets/blocos.png",
+    "source": "Curso SDM 2026 - 2026-11-06.pptx",
+    "pptx_member": "ppt/media/image435.png",
+    "slides": [
+      387
+    ],
+    "transformation": "cópia integral",
+    "match": "exact image bytes or pixels"
+  },
+  {
+    "asset": "assets/resolucao.png",
+    "source": "Curso SDM 2026 - 2026-11-06.pptx",
+    "pptx_member": "ppt/media/image253.png",
+    "slides": [
+      222
+    ],
+    "transformation": "cópia integral",
+    "match": "exact image bytes or pixels"
+  }
+]
